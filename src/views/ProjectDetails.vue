@@ -13,12 +13,19 @@ import EventService from "@/services/EventService.js";
 export default {  
   data(){
     return {
-      projects : null
+      project : null,
+      id:1
     }
   }
   ,
-  created(){
-      // fetch event (by id) and set local data
+created(){
+    EventService.getProject  (this.id)
+      .then(response =>{
+        this.project = response.data
+      })
+      .catch(error => {
+        console.log(error)
+      })
     }
 }
 </script>
