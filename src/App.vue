@@ -1,12 +1,12 @@
 <template>
 <div id="overlay">
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/portfolio">Portfolio</router-link> |
-    <router-link to="/about">About Me</router-link> |
-    <router-link to="/videos">Videos</router-link> |
-    <router-link to="/contact">Contact</router-link> |
-    <router-link to="/vuehome">Vue Home</router-link>
+    <router-link :to="{name : 'Home'}">Home</router-link> |
+    <router-link :to="{name : 'Portfolio'}">Portfolio</router-link> |
+    <router-link :to="{name : 'About'}">About Me</router-link> |
+    <router-link :to="{name : 'Videos'}">Videos</router-link> |
+    <router-link :to="{name : 'Contact'}">Contact</router-link> |
+    <router-link :to="{name : 'VueHome'}">Vue Home</router-link>
   </div>
 </div>
   <router-view />
