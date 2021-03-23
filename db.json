@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "category": "Unity",
+      "title": "Three Way Cube",
+      "description": "First Mini-Game.",
+      "location": "SAE Bochum",
+      "date": "Octobre 30, 2017"
+    },
+    {
+      "id": 2,
+      "category": "Unity",
+      "title": "Into the Wild",
+      "description": "VR-Hunt and Walk Experience.",
+      "location": "SAE Bochum",
+      "date": "March 30, 2018"
+    },
+    {
+      "id": 3,
+      "category": "Unity",
+      "title": "The Walking Dead",
+      "description": "Procedural Level Generation, AI and more.",
+      "location": "SAE Bochum",
+      "date": "July 30, 2018"
+    }
+  ]
+}

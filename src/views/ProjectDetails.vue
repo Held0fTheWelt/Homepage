@@ -1,13 +1,14 @@
 <template>
-  <div class="projectDetails">
-    <h1>{{project.title}}</h1>
-    <span>@ {{project.location}} on {{project.date}}</span>
-    <p>{{project.description}}</p>    
-  </div>
+  Test Test Test
+
 </template>
 
 <script>
-import ProjectsComponent from "@/components/Project.vue";
+  // <div class="projectDetails">
+  //   <h1>{{project.title}}</h1>
+  //   <span>@ {{project.location}} on {{project.date}}</span>
+  //   <p>{{project.description}}</p>    
+  // </div>
 import EventService from "@/services/EventService.js";
 
 export default {  
