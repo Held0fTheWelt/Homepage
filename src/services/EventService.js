@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios from "axios"
 
 const apiClient = axios.create({
     baseURL: 'https://my-json-server.typicode.com/Held0fTheWelt/Homepage',
