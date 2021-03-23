@@ -32,7 +32,7 @@ const routes = [
   },
   {
     path: "/videos",
-    name: "videos",
+    name: "Videos",
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/VideoGallery.vue"),
   },
