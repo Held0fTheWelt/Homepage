@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
-
 import VueHome from "../views/VueHome.vue";
 import ProjectDetails from "../views/ProjectDetails.vue";
 
@@ -42,6 +41,12 @@ const routes = [
     name: "Contact",
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Contact.vue"),
+  },
+  {
+    path: "/Forms",
+    name: "Forms",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Forms.vue"),
   },
   {
     path: "/vuehome",

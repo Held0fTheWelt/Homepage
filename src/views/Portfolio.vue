@@ -1,6 +1,5 @@
 <template>
   <div class="projects">
-    test
     <h1>My Projects</h1>    
       <!-- Display Project Data -->
       <ProjectsComponent v-for="project in projects" :key="project.id" :project="project"/>    

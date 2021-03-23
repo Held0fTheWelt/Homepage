@@ -1,8 +1,8 @@
 <template>
   <div class="projectDetails" v-if="project">
-    <h1>{project.title}</h1>
-    <span>@ {project.location} on {project.date}</span>
-    <p>{project.description}</p>
+    <h1>{{project.title}}</h1>
+    <span>@ {{project.location}} on {{project.date}}</span>
+    <p>{{project.description}}</p>
   </div>
 </template>
 
