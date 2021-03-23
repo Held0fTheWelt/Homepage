@@ -7,12 +7,13 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: Home,
+    component: Home
   },
   {
-    path: "/project/1",
+    path: "/project/:id",
     name: "ProjectDetails",
-    component: ProjectDetails,
+    props: true,
+    component: ProjectDetails
   },
   {
     path: "/about",

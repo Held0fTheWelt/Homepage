@@ -1,10 +1,8 @@
 <template>
   <div class="projects">
-    <h1>My Projects</h1>
-    
+    <h1>My Projects</h1>    
       <!-- Display Project Data -->
-      <ProjectsComponent v-for="project in projects" :key="project.id" :project="project"/>
-    
+      <ProjectsComponent v-for="project in projects" :key="project.id" :project="project"/>    
   </div>
 </template>
 

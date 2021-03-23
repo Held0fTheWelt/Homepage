@@ -1,9 +1,11 @@
 <template>
-  <div class="project">
-      <!-- Display Data-->
-      <span>@ {{project.location}} on {{project.date}}</span>
-      <h4>{{project.title}}</h4>
-  </div>
+  <router-link class="projectLink" :to="{name: 'ProjectDetails' , params: {id: project.id }}">
+    <div class="project">
+        <!-- Display Data-->
+        <span>@ {{project.location}} on {{project.date}}</span>
+        <h4>{{project.title}}</h4>
+    </div>
+  </router-link>
 </template>
 
 <script>
@@ -11,7 +13,10 @@
         name:'Project',
         props:
         {
-            project: Object
+          project: {
+            type: Object,
+            required: true
+          }
         }
     }
 </script>
@@ -45,4 +50,10 @@ a {
   transform: scale(1.03);
   box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2);
 }
+
+.projectLink {
+  text-decoration: none;
+  color: #f3f3f3;
+}
+
 </style>

@@ -1,21 +1,19 @@
 <template>
-  Test Test Test
-
+   <div class="projectDetails" v-if="project">
+     <h1>{{project.title}}</h1>
+     <span>@ {{project.location}} on {{project.date}}</span>
+     <p>{{project.description}}</p>    
+   </div>
 </template>
 
 <script>
-  // <div class="projectDetails">
-  //   <h1>{{project.title}}</h1>
-  //   <span>@ {{project.location}} on {{project.date}}</span>
-  //   <p>{{project.description}}</p>    
-  // </div>
 import EventService from "@/services/EventService.js";
 
 export default {  
+  props: ['id'],
   data(){
     return {
-      project : null,
-      id:1
+      project : null
     }
   }
   ,
