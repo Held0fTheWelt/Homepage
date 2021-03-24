@@ -14,11 +14,17 @@
         "requirements" :
         [{
           "name" : "PC",
-          "system" : "",
-          "cpu" : "",
-          "ram" : "",
-          "gpu" : "",
-          "storage" : ""
+          "system" : "Windows 10",
+          "cpu" : "Intel Core2 Duo / AMD X2 CPU 2.2 GHz",
+          "ram" : "4 GB RAM",          
+          "gpu" : "Geforce GTX275 / ATI 4670HD",
+          "storage" : "500 MB",
+          "peripherie" : [
+            {
+              "keyboard" : true,
+              "mouse" : true
+            }
+          ]
         }]
       }],
       "story": "",
@@ -35,16 +41,22 @@
       "date": "March 30, 2018",
       "shortStory": "This project was made out of an idea.\nOur first group project was driven by the belief to walk in VR like normal walk, and go for a hunt in a forest.\nThis forest is set on an island, made with World Machine and loaded with World Streamer.",
       "specs": [{
-        "engine": "Unity 2017",
+        "engine": "Unity 2018",
         "language" : "",
         "requirements" :
         [{
           "name" : "PC",
-          "system" : "",
-          "cpu" : "",
-          "ram" : "",
-          "gpu" : "",
-          "storage" : ""
+          "system" : "Windows 10",
+          "cpu" : "Intel Core i-5",
+          "ram" : "16 GB RAM",          
+          "gpu" : "Geforce GTX970",
+          "storage" : "1500 MB",
+          "peripherie" : [
+            {
+              "keyboard" : true,
+              "htc-vive" : true
+            }
+          ]
         }]
       }],
       "story": "",
@@ -65,13 +77,23 @@
         "language" : "",
         "requirements" :
         [{
-          "name" : "PC",
-          "system" : "",
-          "cpu" : "",
-          "ram" : "",
-          "gpu" : "",
-          "storage" : ""
-        }]
+          "engine": "Unity 2017",
+          "language" : "",
+          "requirements" :
+          [{
+            "name" : "PC",
+            "system" : "Windows 10",
+            "cpu" : "Intel Core2 Duo / AMD X2 CPU 2.2 GHz",
+            "ram" : "4 GB RAM",          
+            "gpu" : "Geforce GTX275 / ATI 4670HD",
+            "storage" : "500 MB",
+            "peripherie" : [
+              {
+                "keyboard" : true,
+                "mouse" : true
+              }
+            ]
+          }]        }]
       }],
       "story": "",
       "timeline": [],
@@ -92,11 +114,17 @@
         "requirements" :
         [{
           "name" : "PC",
-          "system" : "",
-          "cpu" : "",
-          "ram" : "",
-          "gpu" : "",
-          "storage" : ""
+          "system" : "Windows 10",
+          "cpu" : "Intel Core2 Duo / AMD X2 CPU 2.2 GHz",
+          "ram" : "4 GB RAM",          
+          "gpu" : "Geforce GTX275 / ATI 4670HD",
+          "storage" : "500 MB",
+          "peripherie" : [
+            {
+              "keyboard" : true,
+              "mouse" : true
+            }
+          ]
         }]
       }],
       "story": "",
@@ -113,17 +141,25 @@
       "date": "July 30, 2018",
       "shortStory": "",
       "specs": [{
-        "engine": "Unity 2017",
-        "language" : "",
-        "requirements" :
-        [{
-          "name" : "PC",
-          "system" : "",
-          "cpu" : "",
-          "ram" : "",
-          "gpu" : "",
-          "storage" : ""
-        }]
+      "engine": "Unity 2017",
+      "language" : "",
+      "requirements" :
+      [{
+        "name" : "PC",
+        "system" : "Windows 10",
+        "cpu" : "Intel Core i-5",
+        "ram" : "16 GB RAM",          
+        "gpu" : "Geforce GTX970",
+        "storage" : "1500 MB",
+        "peripherie" : [
+          {
+            "keyboard" : true,
+            "htc-vive" : true,
+            "gamepad" : true,
+            "gt-driving-force" : true
+          }
+        ]
+       }]
       }],
       "story": "",
       "timeline": [],
@@ -144,11 +180,19 @@
         "requirements" :
         [{
           "name" : "PC",
-          "system" : "",
-          "cpu" : "",
-          "ram" : "",
-          "gpu" : "",
-          "storage" : ""
+          "system" : "Windows 10",
+          "cpu" : "Intel Core2 Duo / AMD X2 CPU 2.2 GHz",
+          "ram" : "4 GB RAM",          
+          "gpu" : "Geforce GTX275 / ATI 4670HD",
+          "storage" : "500 MB",
+          "peripherie" : [
+            {
+              "keyboard" : true,
+              "mouse" : true,
+              "gamepad" : true,
+              "gt-driving-force" : true
+            }
+          ]
         }]
       }],
       "story": "",
@@ -169,12 +213,25 @@
         "language" : "",
         "requirements" :
         [{
-          "name" : "PC",
-          "system" : "",
-          "cpu" : "",
-          "ram" : "",
-          "gpu" : "",
-          "storage" : ""
+          "engine": "Unity 2017",
+          "language" : "",
+          "requirements" :
+          [{
+            "name" : "PC",
+            "system" : "Windows 10",
+            "cpu" : "Intel Core i-5",
+            "ram" : "16 GB RAM",          
+            "gpu" : "Geforce GTX970",
+            "storage" : "1500 MB",
+            "peripherie" : [
+              {
+                "keyboard" : true,
+                "htc-vive" : true,
+                "thrustmaster" : true,
+                "gamepad" : true
+              }
+            ]
+          }]
         }]
       }],
       "story": "",
@@ -196,11 +253,17 @@
         "requirements" :
         [{
           "name" : "PC",
-          "system" : "",
-          "cpu" : "",
-          "ram" : "",
-          "gpu" : "",
-          "storage" : ""
+          "system" : "Windows 10",
+          "cpu" : "Intel Core i-5",
+          "ram" : "16 GB RAM",          
+          "gpu" : "Geforce GTX970",
+          "storage" : "500 MB",
+          "peripherie" : [
+            {
+              "keyboard" : true,
+              "mouse" : true
+            }
+          ]
         }]
       }],
       "story": "",
