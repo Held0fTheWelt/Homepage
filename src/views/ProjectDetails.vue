@@ -43,7 +43,7 @@ export default {
 
 <style scoped>
 .shortStory{
-  padding-left: 80px;
+  padding-left: 45%;
   text-align: left;
   white-space: pre;
   line-height: 1.2em;
