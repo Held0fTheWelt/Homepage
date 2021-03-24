@@ -25,7 +25,7 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
   {
-    path: "/Portfolio",
+    path: "/portfolio",
     name: "Portfolio",
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Portfolio.vue"),
@@ -43,7 +43,7 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/Contact.vue"),
   },
   {
-    path: "/Forms",
+    path: "/forms",
     name: "Forms",
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Forms.vue"),
