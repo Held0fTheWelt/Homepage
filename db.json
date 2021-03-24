@@ -107,7 +107,7 @@
       "description": "Procedural Level Generation \nAI \nand more",
       "location": "SAE Bochum",
       "date": "May 30, 2018",
-      "shortStory": "The Walking Dead grew out of a school project series for procedural level generation,\nsimple AI movement, and is my first game with a self-created\ntracking shot in the intro.",
+      "shortStory": "'The Walking Dead' grew out of a school project series for procedural level generation,\nsimple AI movement, and is my first game with a self-created\ntracking shot in the intro.",
       "specs": [{
         "engine": "Unity 2017",
         "language" : "",
