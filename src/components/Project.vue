@@ -8,6 +8,7 @@
         <!-- Display Data-->
         <span>@ {{project.location}} on {{project.date}}</span>
         <h4>{{project.title}}</h4>
+        <p>{{project.description}}</p>
     </div>
   </router-link>
 </template>
@@ -60,7 +61,7 @@ a {
   height: 170px;
   cursor: pointer;
   border: 1px solid #666666;
-  margin-bottom: 18px;
+  margin-bottom: 18px;  
 }
 
 .project :hover{

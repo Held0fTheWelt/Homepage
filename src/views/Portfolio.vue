@@ -2,7 +2,7 @@
   <div class="projects">
     <h1>My Projects</h1>    
       <!-- Display Project Data -->
-      <ProjectsComponent v-for="project in projects" :key="project.id" :project="project"/>    
+      <ProjectsComponent v-for="project in projects" :key="project.id" :project="project" class="projectComponent"/>    
   </div>
 </template>
 
@@ -38,5 +38,9 @@ export default {
   display:flex;
   flex-direction: column;
   align-items: center;
+}
+
+.projectComponent{
+  float:left;
 }
 </style>
