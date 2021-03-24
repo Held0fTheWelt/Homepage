@@ -1,7 +1,7 @@
 <template>
   <div class="logo">
     <video autoplay loop muted id="logoVideo">
-      <source src="../assets/Logo.mp4" type="video/mp4"> 
+      <source src="../assets/videos/Logo.mp4" type="video/mp4"> 
       <!-- <source src="../assets/Logo.ogg" type="video/ogg"> -->
       Ihr Browser kann dieses Video nicht wiedergeben.<br/>
       Dieser Film zeigt ein Logo Animation. 

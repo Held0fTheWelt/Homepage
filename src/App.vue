@@ -21,29 +21,5 @@
   text-align: center;
   color: #d8d8d8;
 }
-#overlay {
-  position: relative;
-  z-index: 1;
-}
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #999999;
-}
-
-#nav a.router-link-exact-active {
-  color: #303294;
-}
-
-body {
-  background: #000000;
-}
-
-h4 {
-  font-size: 20px;
-}
 </style>
