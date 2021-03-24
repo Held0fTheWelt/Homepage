@@ -1,5 +1,9 @@
 <template>
   <div class="project">
+      <div class="project-image-small">
+        <!-- Image goes here -->
+        <img v-bind:src="image" alt="Project Image"/>
+      </div>
       <!-- Display Data-->
       <span>@ {{project.location}} on {{project.date}}</span>
       <h4>{{project.title}}</h4>
@@ -7,17 +11,36 @@
 </template>
 
 <script>
-    export default{
-        name:'Project',        
-        props:
-        {
-            project: Object
-        }
+export default{
+  name:'ProjectDetails',        
+  props:
+  {
+    project: {
+      type: Object,
+      required: true
     }
+  },
+  data(){
+    return {
+      image : require('../assets/images/projects/' + this.project.id + '/image_big_logo.png')
+    }
+  },
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+p{
+   white-space: pre;
+   line-height: 1.6em;
+}
+
+img {
+	object-fit: contain;
+	width:50%;
+	height:80%;
+  float:left;
+}
 h3 {
   margin: 40px 0 0;
 }
