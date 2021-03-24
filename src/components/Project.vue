@@ -1,13 +1,13 @@
 <template>
   <router-link class="projectLink" :to="{name: 'ProjectDetails' , params: {id: project.id }}">
     <div class="project">
-        <!-- Display Data-->
-        <span>@ {{project.location}} on {{project.date}}</span>
-        <h4>{{project.title}}</h4>
         <div class="project-image-small">
           <!-- Image goes here -->
           <img v-bind:src="image" alt="Project Image"/>
         </div>
+        <!-- Display Data-->
+        <span>@ {{project.location}} on {{project.date}}</span>
+        <h4>{{project.title}}</h4>
     </div>
   </router-link>
 </template>
@@ -34,8 +34,9 @@
 <style scoped>
 img {
 	object-fit: contain;
-	width:200%;
-	height:150%
+	width:50%;
+	height:80%;
+  float:left;
 }
 
 h3 {
@@ -55,7 +56,8 @@ a {
 
 .project {
   padding: 20px;
-  width: 250px;
+  width: 600px;
+  height: 170px;
   cursor: pointer;
   border: 1px solid #666666;
   margin-bottom: 18px;

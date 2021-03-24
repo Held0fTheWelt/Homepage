@@ -51,18 +51,6 @@
     {
       "id": 5,
       "category": "Unity",
-      "title": "Snipes Clone",
-      "description": "First Dual Player Modes.",
-      "location": "SAE Bochum",
-      "date": "July 30, 2018",
-      "story": "",
-      "smallImage": "",
-      "bigImage" : "",
-      "video": ""
-    },
-    {
-      "id": 7,
-      "category": "Unity",
       "title": "The Garage",
       "description": "Multiplayer Racing Game.",
       "location": "SAE Bochum",
@@ -73,7 +61,7 @@
       "video": ""
     },
     {
-      "id": 8,
+      "id": 6,
       "category": "Unity",
       "title": "Race It",
       "description": "Multiplayer Racing Game.",
@@ -85,7 +73,7 @@
       "video": ""
     },
     {
-      "id": 9,
+      "id": 7,
       "category": "Unity",
       "title": "The Viper",
       "description": "VR & Non-VR Space Simulation Projects.",
@@ -97,7 +85,7 @@
       "video": ""
     },
     {
-      "id": 10,
+      "id": 8,
       "category": "Unreal",
       "title": "Firepower 2k18",
       "description": "Tank Simulation Game.",
