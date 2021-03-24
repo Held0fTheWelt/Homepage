@@ -4,25 +4,40 @@
         <!-- Display Data-->
         <span>@ {{project.location}} on {{project.date}}</span>
         <h4>{{project.title}}</h4>
+        <div class="project-image-small">
+          <!-- Image goes here -->
+          <img v-bind:src="image" alt="Project Image"/>
+        </div>
     </div>
   </router-link>
 </template>
 
 <script>
-    export default{
-        name:'Project',
-        props:
-        {
-          project: {
-            type: Object,
-            required: true
-          }
-        }
-    }
+  export default{
+    name:'Project',
+    props:
+    {
+      project: {
+        type: Object,
+        required: true
+      }
+    },
+    data(){
+      return {
+        image : require('../assets/images/projects/' + this.project.id + '/image_big_logo.png')
+      }
+    },
+  }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+img {
+	object-fit: contain;
+	width:200%;
+	height:150%
+}
+
 h3 {
   margin: 40px 0 0;
 }

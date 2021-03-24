@@ -19,8 +19,7 @@ export default {
     return {
       projects : null
     }
-  }
-  ,
+  },
   created(){
     EventService.getProjects  ()
       .then(response =>{

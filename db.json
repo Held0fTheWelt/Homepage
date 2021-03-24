@@ -61,7 +61,7 @@
       "video": ""
     },
     {
-      "id": 6,
+      "id": 7,
       "category": "Unity",
       "title": "Race It",
       "description": "Multiplayer Racing Game.",
@@ -73,7 +73,19 @@
       "video": ""
     },
     {
-      "id": 7,
+      "id": 8,
+      "category": "Unity",
+      "title": "Race It",
+      "description": "Multiplayer Racing Game.",
+      "location": "SAE Bochum",
+      "date": "July 30, 2018",
+      "story": "",
+      "smallImage": "",
+      "bigImage" : "",
+      "video": ""
+    },
+    {
+      "id": 9,
       "category": "Unity",
       "title": "The Viper",
       "description": "VR & Non-VR Space Simulation Projects.",
@@ -85,7 +97,7 @@
       "video": ""
     },
     {
-      "id": 8,
+      "id": 10,
       "category": "Unreal",
       "title": "Firepower 2k18",
       "description": "Tank Simulation Game.",
