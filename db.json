@@ -71,7 +71,7 @@
       "description": "Simple Orbit Simulation Task",
       "location": "SAE Bochum",
       "date": "April 30, 2018",
-      "shortStory": "",
+      "shortStory": "Satellites is created in a very short period of time,\nand realizes the visualization of orbits and rotations in one application.",
       "specs": [{
         "engine": "Unity 2017",
         "language" : "",
