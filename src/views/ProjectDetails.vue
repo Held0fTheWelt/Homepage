@@ -6,6 +6,7 @@
     <h1>{{project.title}}</h1>
     <span class="location">@ {{project.location}} on {{project.date}}</span>
     <p>{{project.description}}</p>
+    <p class="shortStory">{{project.shortStory}}</p>
   </div>
 </template>
 
@@ -35,8 +36,11 @@ export default {
 </script>
 
 <style scoped>
-.projectDetails{
-/* text-align: left; */
+.shortStory{
+  text-align: left;
+  width: 400px;
+  white-space: pre;
+  line-height: 1.2em;
 }
 
 h1 {
