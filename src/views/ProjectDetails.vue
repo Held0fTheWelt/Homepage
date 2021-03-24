@@ -1,8 +1,14 @@
 <template>
   <div class="projectDetails" v-if="project">
-    <div class="project-image-small">
+    <!-- <div class="project-image-small">
       <img v-bind:src="image" alt="Project Image"/>
-    </div>
+    </div> -->
+    <video autoplay controls  id="logoVideo">
+      <source v-bind:src="video" type="video/mp4"> 
+      <!-- <source src="../assets/Logo.ogg" type="video/ogg"> -->
+      Ihr Browser kann dieses Video nicht wiedergeben.<br/>
+      Dieser Film zeigt einen Trailer zum Projekt. 
+    </video>
     <h1>{{project.title}}</h1>
     <span class="location">@ {{project.location}} on {{project.date}}</span>
     <p>{{project.description}}</p>
@@ -18,14 +24,14 @@ export default {
   data() {
     return {
       project: null,
-      image : null
+      video : null
     };
   },
   created() {
     EventService.getProject(this.id)
       .then((response) => {
         this.project = response.data;
-        this.image = require('../assets/images/projects/' + this.project.id + '/image_big_logo.png');
+        this.video = require('../assets/videos/Projects/' + this.project.id + '/Trailer.mp4');
       })
       .catch((error) => {
         console.log(error);
@@ -56,9 +62,9 @@ p{
    line-height: 1.6em;
 }
 
-img {
+video {
 	object-fit: contain;
-	width:50%;
+	width:40%;
 	height:80%;
   padding-left: 20px;
   padding-right: 20px;
