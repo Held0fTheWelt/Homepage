@@ -33,6 +33,10 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+p{
+   white-space: pre;
+}
+
 img {
 	object-fit: contain;
 	width:50%;
