@@ -1,6 +1,6 @@
 <template>
   <div class="projects">
-    <h1>My Projects</h1>    
+    <h1>My Projects at SAE Bochum 09/2017 - 03/2019</h1>    
       <!-- Display Project Data -->
       <ProjectsComponent v-for="project in projects" :key="project.id" :project="project" class="projectComponent"/>    
   </div>
