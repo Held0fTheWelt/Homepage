@@ -9,8 +9,17 @@
       "date": "Octobre 30, 2017",
       "shortStory": "My first assignment at SAE was to write a mini-game.\nSince I already had skills with Unity and C#, and enjoyed playing with a little wooden game from my childhood,\nI decided that Three Way Cube should be my first mini-game.",
       "specs": [{
-        "engine": "Unity 2017"
-
+        "engine": "Unity 2017",
+        "language" : "",
+        "requirements" :
+        [{
+          "name" : "PC",
+          "system" : "",
+          "cpu" : "",
+          "ram" : "",
+          "gpu" : "",
+          "storage" : ""
+        }]
       }],
       "story": "",
       "timeline": [],
@@ -25,7 +34,19 @@
       "location": "SAE Bochum",
       "date": "March 30, 2018",
       "shortStory": "This project was made out of an idea.\nOur first group project was driven by the belief to walk in VR like normal walk, and go for a hunt in a forest.\nThis forest is set on an island, made with World Machine and loaded with World Streamer.",
-      "specs": [],
+      "specs": [{
+        "engine": "Unity 2017",
+        "language" : "",
+        "requirements" :
+        [{
+          "name" : "PC",
+          "system" : "",
+          "cpu" : "",
+          "ram" : "",
+          "gpu" : "",
+          "storage" : ""
+        }]
+      }],
       "story": "",
       "timeline": [],
       "budget" : [],
@@ -39,7 +60,19 @@
       "location": "SAE Bochum",
       "date": "April 30, 2018",
       "shortStory": "",
-      "specs": [],
+      "specs": [{
+        "engine": "Unity 2017",
+        "language" : "",
+        "requirements" :
+        [{
+          "name" : "PC",
+          "system" : "",
+          "cpu" : "",
+          "ram" : "",
+          "gpu" : "",
+          "storage" : ""
+        }]
+      }],
       "story": "",
       "timeline": [],
       "budget" : [],
@@ -53,7 +86,19 @@
       "location": "SAE Bochum",
       "date": "May 30, 2018",
       "shortStory": "",
-      "specs": [],
+      "specs": [{
+        "engine": "Unity 2017",
+        "language" : "",
+        "requirements" :
+        [{
+          "name" : "PC",
+          "system" : "",
+          "cpu" : "",
+          "ram" : "",
+          "gpu" : "",
+          "storage" : ""
+        }]
+      }],
       "story": "",
       "timeline": [],
       "budget" : [],
@@ -67,7 +112,19 @@
       "location": "SAE Bochum",
       "date": "July 30, 2018",
       "shortStory": "",
-      "specs": [],
+      "specs": [{
+        "engine": "Unity 2017",
+        "language" : "",
+        "requirements" :
+        [{
+          "name" : "PC",
+          "system" : "",
+          "cpu" : "",
+          "ram" : "",
+          "gpu" : "",
+          "storage" : ""
+        }]
+      }],
       "story": "",
       "timeline": [],
       "budget" : [],
@@ -81,7 +138,19 @@
       "location": "SAE Bochum",
       "date": "July 30, 2018",
       "shortStory": "",
-      "specs": [],
+      "specs": [{
+        "engine": "Unity 2017",
+        "language" : "",
+        "requirements" :
+        [{
+          "name" : "PC",
+          "system" : "",
+          "cpu" : "",
+          "ram" : "",
+          "gpu" : "",
+          "storage" : ""
+        }]
+      }],
       "story": "",
       "timeline": [],
       "budget" : [],
@@ -95,7 +164,19 @@
       "location": "SAE Bochum",
       "date": "August 30, 2018",
       "shortStory": "",
-      "specs": [],
+      "specs": [{
+        "engine": "Unity 2017",
+        "language" : "",
+        "requirements" :
+        [{
+          "name" : "PC",
+          "system" : "",
+          "cpu" : "",
+          "ram" : "",
+          "gpu" : "",
+          "storage" : ""
+        }]
+      }],
       "story": "",
       "timeline": [],
       "budget" : [],
@@ -109,7 +190,19 @@
       "location": "SAE Bochum",
       "date": "Octobre 30, 2018",
       "shortStory": "",
-      "specs": [],
+      "specs": [{
+        "engine": "Unity 2017",
+        "language" : "",
+        "requirements" :
+        [{
+          "name" : "PC",
+          "system" : "",
+          "cpu" : "",
+          "ram" : "",
+          "gpu" : "",
+          "storage" : ""
+        }]
+      }],
       "story": "",
       "timeline": [],
       "budget" : [],
