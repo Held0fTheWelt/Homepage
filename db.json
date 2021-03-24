@@ -8,7 +8,10 @@
       "location": "SAE Bochum",
       "date": "Octobre 30, 2017",
       "shortStory": "My first assignment at SAE was to write a mini-game.\nSince I already had skills with Unity and C#, and enjoyed playing with a little wooden game from my childhood,\nI decided that Three Way Cube should be my first mini-game.",
-      "specs": [],
+      "specs": [{
+        "engine": "Unity 2017"
+
+      }],
       "story": "",
       "timeline": [],
       "budget" : [],
