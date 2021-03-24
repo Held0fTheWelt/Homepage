@@ -66,7 +66,7 @@ a {
 
 .project :hover{
   transform: scale(1.03);
-  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2); */
 }
 
 .projectLink {
