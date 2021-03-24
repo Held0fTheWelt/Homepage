@@ -35,6 +35,7 @@
 <style scoped>
 p{
    white-space: pre;
+   line-height: 1.6em;
 }
 
 img {
