@@ -1,9 +1,6 @@
 <template>
   <div class="project">
-      <div class="project-image-small">
-        <!-- Image goes here -->
-        <img v-bind:src="image" alt="Project Image"/>
-      </div>
+
       <!-- Display Data-->
       <span>@ {{project.location}} on {{project.date}}</span>
       <h4>{{project.title}}</h4>
