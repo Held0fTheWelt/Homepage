@@ -19,18 +19,42 @@
           "ram" : "4 GB RAM",          
           "gpu" : "Geforce GTX275 / ATI 4670HD",
           "storage" : "500 MB",
-          "peripherie" : [
-            {
-              "keyboard" : true,
-              "mouse" : true
-            }
-          ]
+          "peripherie" : 
+          [{
+            "keyboard" : true,
+            "mouse" : true
+          }]
         }]
       }],
       "story": "",
-      "timeline": [],
-      "budget" : [],
-      "insight": []
+      "timeline": 
+      [{
+        "start" : "1.10.2017",
+        "end" : "30.11.2017"
+      }],
+      "budget" : 
+      [{
+        "assets" : "",
+        "storage" : "",
+        "paid working hours" : "",
+        "total" : ""
+      }],
+      "insight": 
+      [{
+        "idea": 
+        [{
+          "story" : ""
+        }],
+        "concept": 
+        [{
+          "story" : ""
+        }],
+        "implementation": 
+        [{
+          "story" : ""
+        }],
+        "mark" : "1.7"
+      }]
     },
     {
       "id": 2,
@@ -60,9 +84,34 @@
         }]
       }],
       "story": "",
-      "timeline": [],
-      "budget" : [],
-      "insight": []
+      "timeline": 
+      [{
+        "start" : "1.10.2017",
+        "end" : "30.11.2017"
+      }],
+      "budget" : 
+      [{
+        "assets" : "",
+        "storage" : "",
+        "paid working hours" : "",
+        "total" : ""
+      }],
+      "insight": 
+      [{
+        "idea": 
+        [{
+          "story" : ""
+        }],
+        "concept": 
+        [{
+          "story" : ""
+        }],
+        "implementation": 
+        [{
+          "story" : ""
+        }],
+        "mark" : "1.7"
+      }]
     },
     {
       "id": 3,
@@ -96,9 +145,34 @@
           }]        }]
       }],
       "story": "",
-      "timeline": [],
-      "budget" : [],
-      "insight": []
+      "timeline": 
+      [{
+        "start" : "1.10.2017",
+        "end" : "30.11.2017"
+      }],
+      "budget" : 
+      [{
+        "assets" : "",
+        "storage" : "",
+        "paid working hours" : "",
+        "total" : ""
+      }],
+      "insight": 
+      [{
+        "idea": 
+        [{
+          "story" : ""
+        }],
+        "concept": 
+        [{
+          "story" : ""
+        }],
+        "implementation": 
+        [{
+          "story" : ""
+        }],
+        "mark" : "1.7"
+      }]
     },
     {
       "id": 4,
@@ -128,9 +202,34 @@
         }]
       }],
       "story": "",
-      "timeline": [],
-      "budget" : [],
-      "insight": []
+      "timeline": 
+      [{
+        "start" : "1.10.2017",
+        "end" : "30.11.2017"
+      }],
+      "budget" : 
+      [{
+        "assets" : "",
+        "storage" : "",
+        "paid working hours" : "",
+        "total" : ""
+      }],
+      "insight": 
+      [{
+        "idea": 
+        [{
+          "story" : ""
+        }],
+        "concept": 
+        [{
+          "story" : ""
+        }],
+        "implementation": 
+        [{
+          "story" : ""
+        }],
+        "mark" : "1.7"
+      }]
     },
     {
       "id": 5,
@@ -162,9 +261,34 @@
        }]
       }],
       "story": "",
-      "timeline": [],
-      "budget" : [],
-      "insight": []
+      "timeline": 
+      [{
+        "start" : "1.10.2017",
+        "end" : "30.11.2017"
+      }],
+      "budget" : 
+      [{
+        "assets" : "",
+        "storage" : "",
+        "paid working hours" : "",
+        "total" : ""
+      }],
+      "insight": 
+      [{
+        "idea": 
+        [{
+          "story" : ""
+        }],
+        "concept": 
+        [{
+          "story" : ""
+        }],
+        "implementation": 
+        [{
+          "story" : ""
+        }],
+        "mark" : "1.7"
+      }]
     },
     {
       "id": 6,
@@ -196,9 +320,34 @@
         }]
       }],
       "story": "",
-      "timeline": [],
-      "budget" : [],
-      "insight": []
+      "timeline": 
+      [{
+        "start" : "1.10.2017",
+        "end" : "30.11.2017"
+      }],
+      "budget" : 
+      [{
+        "assets" : "",
+        "storage" : "",
+        "paid working hours" : "",
+        "total" : ""
+      }],
+      "insight": 
+      [{
+        "idea": 
+        [{
+          "story" : ""
+        }],
+        "concept": 
+        [{
+          "story" : ""
+        }],
+        "implementation": 
+        [{
+          "story" : ""
+        }],
+        "mark" : "1.7"
+      }]
     },
     {
       "id": 7,
@@ -235,9 +384,34 @@
         }]
       }],
       "story": "",
-      "timeline": [],
-      "budget" : [],
-      "insight": []
+      "timeline": 
+      [{
+        "start" : "1.10.2017",
+        "end" : "30.11.2017"
+      }],
+      "budget" : 
+      [{
+        "assets" : "",
+        "storage" : "",
+        "paid working hours" : "",
+        "total" : ""
+      }],
+      "insight": 
+      [{
+        "idea": 
+        [{
+          "story" : ""
+        }],
+        "concept": 
+        [{
+          "story" : ""
+        }],
+        "implementation": 
+        [{
+          "story" : ""
+        }],
+        "mark" : "1.7"
+      }]
     },
     {
       "id": 8,
@@ -267,9 +441,34 @@
         }]
       }],
       "story": "",
-      "timeline": [],
-      "budget" : [],
-      "insight": []
+      "timeline": 
+      [{
+        "start" : "1.10.2017",
+        "end" : "30.11.2017"
+      }],
+      "budget" : 
+      [{
+        "assets" : "",
+        "storage" : "",
+        "paid working hours" : "",
+        "total" : ""
+      }],
+      "insight": 
+      [{
+        "idea": 
+        [{
+          "story" : ""
+        }],
+        "concept": 
+        [{
+          "story" : ""
+        }],
+        "implementation": 
+        [{
+          "story" : ""
+        }],
+        "mark" : "1.7"
+      }]
     }
   ]
 }
