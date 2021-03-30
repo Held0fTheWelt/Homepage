@@ -23,10 +23,3 @@ img {
     width: 100%;
 
 }
-
-.project-large {
-    cursor: pointer;
-    border: 1px solid #666666;
-    margin-bottom: 2%;  
-    width: 55%;
-  }
