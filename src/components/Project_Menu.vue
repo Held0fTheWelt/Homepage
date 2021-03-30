@@ -5,7 +5,7 @@
         <v-row>
             <v-col cols="7"  class="hoverData">
                 <!-- Image goes here -->
-                <img v-bind:src="image" alt="Project Image"/>
+                <v-img v-bind:src="image" alt="Project Image"/>
 
             </v-col>
             <v-col cols="5">

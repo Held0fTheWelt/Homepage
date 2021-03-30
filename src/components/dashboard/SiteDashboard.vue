@@ -1,8 +1,9 @@
 <template>
     <v-card class="mx-auto mt-5 rounded" id="dashboard">
-      <v-card-title><h1>Task Dashboard</h1></v-card-title>
+      <v-card-title><h1 :class="{'xsFont' : $vuetify.breakpoint.xs, 'largeFont' : $vuetify.breakpoint.mdAndUp}">Task Dashboard</h1></v-card-title>
       <v-card-text>
-        <v-data-table :headers="headers" :items="tasks" :items-per-page="5" class="elevation-1" ></v-data-table>
+        <v-data-table :headers="headers" :items="tasks" :items-per-page="5" class="elevation-1"
+    justify="center" ></v-data-table>
       </v-card-text>
     </v-card>
     
@@ -38,10 +39,9 @@ import Tasks from '@/assets/data/site/vue-tasks.json';
 </script>
 
 <style scoped>
-h1
-{
-  text-align: center;
-  width: 100%;
+.v-data-table-header {
+    font-size: xx-small ;
+
 }
 #dashboard{
   width: 100%;

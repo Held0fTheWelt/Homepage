@@ -1,7 +1,7 @@
 <template>
     <v-container id="Portfolio" >
       <v-row>
-        <v-col>
+        <v-col cols="12">
           <ProjectsComponent v-for="project in projects" :key="project.id" :project="project" class="projectComponent"/>
         </v-col>
       </v-row>

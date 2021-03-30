@@ -1,6 +1,6 @@
 <template>
-    <v-card class="mx-auto mt-5 rounded" id="dashboard">
-      <v-card-title><h1>Project Dashboard</h1></v-card-title>
+    <v-card class="mx-auto mt-5 rounded" id="dashboard" >
+      <v-card-title><h1 :class="{'xsFont' : $vuetify.breakpoint.xs, 'largeFont' : $vuetify.breakpoint.mdAndUp}">Project Dashboard</h1></v-card-title>
       <v-card-text>
         <v-data-table :headers="headers" :items="projects" :items-per-page="10" class="elevation-1" ></v-data-table>
       </v-card-text>
