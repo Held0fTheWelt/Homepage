@@ -2,7 +2,7 @@
     <v-card class="mx-auto rounded {'v-cardPad' : $vuetify.breakpoint.xs, 'v-card' : $vuetify.breakpoint.mdAndUp}" id="dashboard">
       <v-card-title><h1 :class="{'xsFont' : $vuetify.breakpoint.xs, 'largeFont' : $vuetify.breakpoint.mdAndUp}">Task Dashboard</h1></v-card-title>
       <v-card-text>
-        <v-data-table dense :headers="headers" :items="tasks" :items-per-page="5" :class="{'xsFont' : $vuetify.breakpoint.xs, 'largeFont' : $vuetify.breakpoint.mdAndUp}" justify="center" ></v-data-table>
+        <v-data-table dense :headers="headers" :items="tasks" :items-per-page="10" :class="{'xsFont' : $vuetify.breakpoint.xs, 'largeFont' : $vuetify.breakpoint.mdAndUp}" justify="center" ></v-data-table>
       </v-card-text>
     </v-card>
     
@@ -16,6 +16,7 @@ import Tasks from '@/assets/data/site/vue-tasks.json';
      return {
         methods: {
             itemRowBackground: function (item) {
+              console.log(item);
                 return item.status == 'OK' ? 'style-ok' : item.status == 'Open' ? 'style-open' : 'style-new'
             }
         },
