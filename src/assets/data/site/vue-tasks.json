@@ -1,6 +1,10 @@
 {
     "tasks":[
         {
+            "name": "Vue Animations",
+            "status": "New"
+        },
+        {
             "name": "Contact Component",
             "status": "Open"
         },
