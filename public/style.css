@@ -8,3 +8,7 @@ h1
     font-size: xx-large ;
 }
 
+.v-data-table__mobile-row__header, .v-data-table__mobile-row__cell {
+    font-size: xx-small ;
+
+}

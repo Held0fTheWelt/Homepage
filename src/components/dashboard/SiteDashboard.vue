@@ -39,10 +39,7 @@ import Tasks from '@/assets/data/site/vue-tasks.json';
 </script>
 
 <style scoped>
-.v-data-table-header {
-    font-size: xx-small ;
 
-}
 #dashboard{
   width: 100%;
 }
