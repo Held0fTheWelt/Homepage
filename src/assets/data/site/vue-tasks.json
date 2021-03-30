@@ -1,15 +1,27 @@
 {
     "tasks":[
         {
-            "name": "Project Management",
+            "name": "Contact Component",
+            "status": "Open"
+        },
+        {
+            "name": "DataTable Coloring",
+            "status": "Open"
+        },
+        {
+            "name": "Project Details Component",
             "status": "OK"
         },
         {
-            "name": "VUE-Basics",
+            "name": "Portfolio Component",
             "status": "OK"
         },
         {
-            "name": "VUE-Components",
+            "name": "JSON-Data Local",
+            "status": "OK"
+        },
+        {
+            "name": "JSON-Data Axios",
             "status": "OK"
         },
         {
@@ -17,24 +29,20 @@
             "status": "OK"
         },
         {
-            "name": "JSON-Data Axios",
-            "status": "Open"
+            "name": "VUE-Components",
+            "status": "OK"
         },
         {
-            "name": "JSON-Data Local",
-            "status": "Open"
+            "name": "Installing Vue Packages",
+            "status": "OK"
         },
         {
-            "name": "Portfolio Component",
-            "status": "Open"
+            "name": "VUE-Basics",
+            "status": "OK"
         },
         {
-            "name": "Project Details Component",
-            "status": "Open"
-        },
-        {
-            "name": "Contact Component",
-            "status": "Open"
-          }
-        ]
+            "name": "Project Management",
+            "status": "OK"
+        }
+    ]
 }
