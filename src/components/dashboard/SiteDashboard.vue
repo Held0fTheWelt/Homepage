@@ -38,19 +38,19 @@ import Tasks from '@/assets/data/site/vue-tasks.json';
        headers:[
          {           
            text:'ID',
-           align: center,
+           align: 'center',
            sortable: 'true',
            value:'id'
          },
         {           
           text:'Task',
-          align: left,
+          align: 'left',
           sortable: false,
           value:'name'
         },
         {
           text:'Status',
-          align: left,
+          align: 'left',
           value:'status'
          },
        ]
