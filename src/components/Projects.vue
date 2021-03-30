@@ -118,7 +118,7 @@ h4, h3 {
     align-content:center;
     cursor: pointer;
     border: 1px solid #666666;
-    margin-bottom: 20%;  
+    margin-bottom: 2%;  
     padding: 5%;
     width: 98%;
   }
