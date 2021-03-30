@@ -13,22 +13,24 @@
         </video>
        </v-col>
        <v-col cols="7">
-         <vcard>
-           <v-card-title><h1>{{project.title}}</h1></v-card-title>
+         <vcard>           
            <v-card-text>
-             <v-row>
-               <v-col>
-                <span class="location">@ {{project.location}} on {{project.date}}</span>                 
+              <v-row class="alignCenter">
+               <v-col><h1>{{project.title}}</h1>
+               </v-col>
+             </v-row>
+             <v-row class="alignCenter">
+               <v-col>@ {{project.location}} on {{project.date}}
                </v-col>
              </v-row>
               <v-row>
                <v-col>
-                <p>{{project.description}}</p>                 
+                {{project.description}}
                </v-col>
              </v-row>
               <v-row>
                <v-col>
-                <p>{{project.shortStory}}</p>                 
+                {{project.shortStory}}
                </v-col>
              </v-row>
            </v-card-text>
@@ -75,8 +77,8 @@ h1 {
   /* text-align: center; */
 }
 
-.location{
-  /* text-align: center; */
+.alignCenter{
+  text-align: center;
 }
 
 p{
