@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import Tasks from '@/assets/data/site/vue-tasks.json';
   export default {
     name:"SiteDashboard",
    data(){
@@ -18,6 +19,7 @@
                 return item.status == 'OK' ? 'style-ok' : item.status == 'Open' ? 'style-open' : 'style-new'
             }
         },
+        tasks: Tasks.tasks,
        headers:[
         {           
           text:'SiteTask',
@@ -29,46 +31,8 @@
           text:'Status',
           value:'status'
          },
-       ],
-        tasks:[
-        {
-            name: 'Project Management',
-            status: 'OK'
-        },
-        {
-            name: 'VUE-Basics',
-            status: 'OK'
-        },
-        {
-            name: 'VUE-Components',
-            status: 'OK'
-        },
-        {
-            name: 'VUE-Routing',
-            status: 'OK'
-        },
-        {
-            name: 'JSON-Data Axios',
-            status: 'Open'
-        },
-        {
-            name: 'JSON-Data Local',
-            status: 'Open'
-        },
-        {
-            name: 'Portfolio Component',
-            status: 'Open'
-        },
-        {
-            name: 'Project Details Component',
-            status: 'Open'
-        },
-        {
-            name: 'Contact Component',
-            status: 'Open'
-          }
-        ]
-      }
+       ]
+     }
    }
   }
 </script>

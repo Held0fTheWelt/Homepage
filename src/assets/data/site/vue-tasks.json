@@ -1,0 +1,40 @@
+{
+    "tasks":[
+        {
+            "name": "Project Management",
+            "status": "OK"
+        },
+        {
+            "name": "VUE-Basics",
+            "status": "OK"
+        },
+        {
+            "name": "VUE-Components",
+            "status": "OK"
+        },
+        {
+            "name": "VUE-Routing",
+            "status": "OK"
+        },
+        {
+            "name": "JSON-Data Axios",
+            "status": "Open"
+        },
+        {
+            "name": "JSON-Data Local",
+            "status": "Open"
+        },
+        {
+            "name": "Portfolio Component",
+            "status": "Open"
+        },
+        {
+            "name": "Project Details Component",
+            "status": "Open"
+        },
+        {
+            "name": "Contact Component",
+            "status": "Open"
+          }
+        ]
+}
