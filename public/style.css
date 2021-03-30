@@ -26,3 +26,13 @@ img {
 tr.v-data-table__selected {
     background: #7d92f5 !important;
   }
+
+  .style-ok td {
+    background-color: rgb(0, 95, 0) !important;
+  }
+  .style-open td{
+    background-color: rgb(128, 72, 0) !important;
+  }
+  .style-new td{
+    background-color: rgb(133, 0, 0) !important;
+  }
