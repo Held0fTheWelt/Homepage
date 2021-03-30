@@ -30,9 +30,9 @@ import Projects from '@/assets/data/projects/projects.json';
           value:'title'
         },
         {
-          text:'Type',
+          text:'Engine',
           sortable: 'true',
-          value:'type'
+          value:'category'
         },
         {
         text:'Status',
