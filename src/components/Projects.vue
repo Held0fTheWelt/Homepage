@@ -120,6 +120,6 @@ h4, h3 {
     border: 1px solid #666666;
     margin-bottom: 2%;  
     padding: 5%;
-    width: 98%;
+    width: 80%;
   }
 </style>

@@ -1,18 +1,23 @@
 {
     "tasks":[
         {
-            "id" : 15,
+            "id" : 16,
             "name": "Live Data Modification",
             "status": "New"
         },
         {
-            "id" : 14,
+            "id" : 15,
             "name": "Login Component",
             "status": "New"
         },
         {
-            "id" : 13,
+            "id" : 14,
             "name": "Vue Animations",
+            "status": "New"
+        },
+        {
+            "id" : 13,
+            "name": "LogoVideo Component",
             "status": "New"
         },
         {
