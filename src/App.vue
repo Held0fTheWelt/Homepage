@@ -1,25 +1,35 @@
 <template>
-  <div id="overlay">
-    <div id="nav">
-      <router-link :to="{ name: 'Home' }">Home</router-link> |
-      <router-link :to="{ name: 'Portfolio' }">Portfolio</router-link> |
-      <router-link :to="{ name: 'About' }">About Me</router-link> |
-      <router-link :to="{ name: 'Videos' }">Videos</router-link> |
-      <router-link :to="{ name: 'Contact' }">Contact</router-link> |
-      <router-link :to="{ name: 'Forms' }">Vue Forms</router-link> |
-      <router-link :to="{ name: 'VueHome' }">Vue Home</router-link>
-    </div>
-  </div>
-  <router-view />
+  <v-app id="vApp">
+    <Navbar />
+    <!-- <v-main> -->
+      <v-main id="content">
+        <router-view></router-view>
+      </v-main>
+    <!-- </v-main> -->
+    <Footer />
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #d8d8d8;
-}
+<script>
+import Navbar from '@/components/Navbar.vue';
+import Footer from '@/components/Footer.vue';
 
+export default {
+  name: "App",  
+  
+  components: {
+    Navbar,
+    Footer,
+  },
+
+  data: () => ({
+    //
+  }),
+};
+</script>
+<style>
+#content
+{
+ width: 100%; 
+}
 </style>

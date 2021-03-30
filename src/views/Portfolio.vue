@@ -1,46 +1,30 @@
 <template>
-  <div class="projects">
-    <h1>My Projects at SAE Bochum 09/2017 - 03/2019</h1>    
-      <!-- Display Project Data -->
-      <ProjectsComponent v-for="project in projects" :key="project.id" :project="project" class="projectComponent"/>    
-  </div>
+    <v-container id="Portfolio" >
+      <v-row>
+        <v-col>
+          <ProjectsComponent v-for="project in projects" :key="project.id" :project="project" class="projectComponent"/>
+        </v-col>
+      </v-row>
+    </v-container>
 </template>
 
 <script>
-import ProjectsComponent from "@/components/Project.vue";
-import EventService from "@/services/EventService.js";
-
+import ProjectsComponent from '@/components/Project_Menu.vue';
+import ProjectsData from '@/assets/data/projects/projects.json';
 export default {
-  name: "Projects",
-  components: {
-    ProjectsComponent
+    name: "Portfolio",  
+  
+    components: {
+      ProjectsComponent,
   },
   data(){
     return {
-      projects : null
+      projects: ProjectsData.projects      
     }
-  },
-  created(){
-    EventService.getProjects  ()
-      .then(response =>{
-        this.projects = response.data
-      })
-      .catch(error => {
-        console.log(error)
-      })
-    }
+  }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.projects{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.projectComponent{
-  float:left;
-}
 </style>

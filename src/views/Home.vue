@@ -1,37 +1,45 @@
 <template>
-  <div class="home">
-    <LogoVideo/>
-    <HomeComponent msg="Welcome to Your Vue.js App" />
-  </div>
+  <v-container class="home" >
+      <v-row>
+        <v-col>
+          <v-card class="mx-auto">
+            <SiteDashboard/>
+          </v-card>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col>
+          <v-card class="mx-auto">
+            <ProjectDashboard/>
+          </v-card>
+        </v-col>
+      </v-row>
+  </v-container>
 </template>
 
 <script>
-    // <video width="1080" height="705" autoplay loop muted id="logoVideo">
-    //   <source src="../assets/Logo.mp4" type="video/mp4"> 
-    //   <!-- <source src="../assets/Logo.ogg" type="video/ogg"> -->
-    //   Ihr Browser kann dieses Video nicht wiedergeben.<br/>
-    //   Dieser Film zeigt ein Logo Animation. 
-    //   Sie können ihn sie <a href="#">https://www.youtube.com/watch?v=Y_kQ8DO3Wuw</a> abrufen.
-    // </video>
-
-
 // @ is an alias to /src
-import HomeComponent from "@/components/HomeComponent.vue";
-import LogoVideo from "@/components/LogoVideo.vue";
+import SiteDashboard from '@/components/dashboard/SiteDashboard.vue';
+import ProjectDashboard from '@/components/dashboard/ProjectDashboard.vue';
 
 export default {
-  name: "Home",
-  components: {
-    HomeComponent,
-    LogoVideo,
+      name: "Home",  
+  
+    components: {
+      SiteDashboard,
+    ProjectDashboard,
   },
 };
 </script>
 
 <style scoped>
+h1{
+   text-align: center;
+   width: 100%;
+}
 
-.home{
-  position:relative;
-  margin-top: -150px;
+.v-card{
+  width: 75%;
+  padding:0.75%;
 }
 </style>

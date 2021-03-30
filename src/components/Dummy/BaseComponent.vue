@@ -1,6 +1,5 @@
 <template>
-    <div id="Contact">
-    </div>
+    
 </template>
 
 <script>

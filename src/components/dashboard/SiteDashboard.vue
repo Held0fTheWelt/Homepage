@@ -1,0 +1,94 @@
+<template>
+    <v-card class="mx-auto mt-5 rounded" id="dashboard">
+      <v-card-title><h1>Task Dashboard</h1></v-card-title>
+      <v-card-text>
+        <v-data-table :headers="headers" :items="tasks" :items-per-page="5" class="elevation-1" ></v-data-table>
+      </v-card-text>
+    </v-card>
+    
+</template>
+
+<script>
+  export default {
+    name:"SiteDashboard",
+   data(){
+     return {
+        methods: {
+            itemRowBackground: function (item) {
+                return item.status == 'OK' ? 'style-ok' : item.status == 'Open' ? 'style-open' : 'style-new'
+            }
+        },
+       headers:[
+        {           
+          text:'SiteTask',
+          align: 'left',
+          sortable: 'true',
+          value:'name'
+        },
+        {
+          text:'Status',
+          value:'status'
+         },
+       ],
+        tasks:[
+        {
+            name: 'Project Management',
+            status: 'OK'
+        },
+        {
+            name: 'VUE-Basics',
+            status: 'OK'
+        },
+        {
+            name: 'VUE-Components',
+            status: 'OK'
+        },
+        {
+            name: 'VUE-Routing',
+            status: 'OK'
+        },
+        {
+            name: 'JSON-Data Axios',
+            status: 'Open'
+        },
+        {
+            name: 'JSON-Data Local',
+            status: 'Open'
+        },
+        {
+            name: 'Portfolio Component',
+            status: 'Open'
+        },
+        {
+            name: 'Project Details Component',
+            status: 'Open'
+        },
+        {
+            name: 'Contact Component',
+            status: 'Open'
+          }
+        ]
+      }
+   }
+  }
+</script>
+
+<style scoped>
+h1
+{
+  text-align: center;
+  width: 100%;
+}
+#dashboard{
+  width: 100%;
+}
+.style-ok {
+  background-color: rgb(0,255,)
+}
+.style-open {
+  background-color: rgb(255,255,0)
+}
+.style-new {
+  background-color: rgb(255,0,0)
+}
+</style>

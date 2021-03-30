@@ -1,7 +1,8 @@
-import { createRouter, createWebHistory } from "vue-router";
+import Vue from "vue";
+import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import VueHome from "../views/VueHome.vue";
-import ProjectDetails from "../views/ProjectDetails.vue";
+
+Vue.use(VueRouter);
 
 const routes = [
   {
@@ -10,53 +11,44 @@ const routes = [
     component: Home,
   },
   {
-    path: "/project/:id",
-    name: "ProjectDetails",
-    props: true,
-    component: ProjectDetails,
-  },
-  {
-    path: "/about",
-    name: "About",
+    path: "/login",
+    name: "Login",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
+      import(/* webpackChunkName: "about" */ '@/views/Login.vue'),
   },
   {
     path: "/portfolio",
     name: "Portfolio",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Portfolio.vue"),
-  },
-  {
-    path: "/videos",
-    name: "Videos",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/VideoGallery.vue"),
+      import(/* webpackChunkName: "about" */ '@/views/Portfolio.vue'),
   },
   {
     path: "/contact",
     name: "Contact",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Contact.vue"),
-  },
+      import(/* webpackChunkName: "about" */ '@/views/Contact.vue'),
+  },  
   {
-    path: "/forms",
-    name: "Forms",
+    path: "/project/:id",
+    name: "Project",
+    props: true,
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Forms.vue"),
-  },
-  {
-    path: "/vuehome",
-    name: "VueHome",
-    component: VueHome,
+      import(/* webpackChunkName: "about" */ '@/views/Project.vue'),
   },
 ];
 
-const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+const router = new VueRouter({
+  mode: "history",
+  base: process.env.BASE_URL,
   routes,
 });
 
