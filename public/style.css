@@ -12,3 +12,8 @@ h1
     font-size: xx-small ;
 
 }
+
+.v-data-table > .v-data-table__wrapper .v-data-table__mobile-row
+{
+    min-height: 15px;
+}

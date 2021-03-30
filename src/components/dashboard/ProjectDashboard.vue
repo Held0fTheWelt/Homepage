@@ -2,7 +2,7 @@
     <v-card class="mx-auto mt-5 rounded" id="dashboard" >
       <v-card-title><h1 :class="{'xsFont' : $vuetify.breakpoint.xs, 'largeFont' : $vuetify.breakpoint.mdAndUp}">Project Dashboard</h1></v-card-title>
       <v-card-text>
-        <v-data-table :headers="headers" :items="projects" :items-per-page="10" class="elevation-1" ></v-data-table>
+        <v-data-table dense :headers="headers" :items="projects" :items-per-page="5" :class="{'xsFont' : $vuetify.breakpoint.xs, 'largeFont' : $vuetify.breakpoint.mdAndUp}" justify="center" ></v-data-table>
       </v-card-text>
     </v-card>
     

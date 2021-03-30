@@ -32,4 +32,8 @@ export default {
 {
  width: 100%; 
 }
+
+table.v-table tbody td, table.v-table tbody th {
+    height: 19px;
+} 
 </style>

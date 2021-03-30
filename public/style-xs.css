@@ -1,3 +1,12 @@
 .xsFont{
     font-size: xx-small;
 }
+
+.theme--dark.v-label {
+    font-size: xx-small;
+}
+
+.xsFont .v-data-table__wrapper table tbody .v-data-table__mobile-table-row .v-data-table__mobile-row {
+    min-height: 18px;
+
+}
