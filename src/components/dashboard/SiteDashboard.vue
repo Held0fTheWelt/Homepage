@@ -10,6 +10,7 @@
          :headers="headers" 
          :items="tasks" 
          :items-per-page="10" 
+         :item-class="itemRowBackground"
          :class="{'elevation-1 xsFont' : $vuetify.breakpoint.xs, 'elevation-1 largeFont' : $vuetify.breakpoint.mdAndUp}" justify="center" 
          >
         
@@ -25,8 +26,8 @@ import Tasks from '@/assets/data/site/vue-tasks.json';
     name:"SiteDashboard",
      methods: {
          itemRowBackground: function (item) {
-           console.log(item);
-             return item.status == 'OK' ? 'style-ok' : item.status == 'Open' ? 'style-open' : 'style-new'
+           console.log(item.status);
+             return item.status === 'OK' ? 'style-ok' : item.status === 'Open' ? 'style-open' : 'style-new'
          },
          rowClick: function (item, row) {      
            console.log("clicked"+item);
@@ -72,13 +73,5 @@ import Tasks from '@/assets/data/site/vue-tasks.json';
 #dashboard{
   width: 100%;
 }
-.style-ok {
-  background-color: rgb(0,255,)
-}
-.style-open {
-  background-color: rgb(255,255,0)
-}
-.style-new {
-  background-color: rgb(255,0,0)
-}
+
 </style>
