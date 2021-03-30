@@ -53,6 +53,7 @@ import Projects from '@/assets/data/projects/projects.json';
 
 .v-card__title{
   padding:0%;
+    padding-top: 2%;
 }
 h1
 {

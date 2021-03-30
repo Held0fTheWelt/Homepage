@@ -45,11 +45,12 @@ import Tasks from '@/assets/data/site/vue-tasks.json';
 
 .v-card__title{
   padding:0%;
+  padding-top: 2%;
 }
-#dashboardTitle{
-  line-height: 0%;
+.xsFont
+{
+  width: 100%;
 }
-
 #dashboard{
   width: 100%;
 }
