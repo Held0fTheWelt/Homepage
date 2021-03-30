@@ -1,6 +1,14 @@
 {
     "tasks":[
         {
+            "name": "Live Data Modification",
+            "status": "New"
+        },
+        {
+            "name": "Login Component",
+            "status": "New"
+        },
+        {
             "name": "Vue Animations",
             "status": "New"
         },
