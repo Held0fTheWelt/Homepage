@@ -23,3 +23,6 @@ img {
     width: 100%;
 
 }
+tr.v-data-table__selected {
+    background: #7d92f5 !important;
+  }
