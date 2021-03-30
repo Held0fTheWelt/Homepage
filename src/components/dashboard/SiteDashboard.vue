@@ -2,7 +2,18 @@
     <v-card class="mx-auto rounded {'v-cardPad' : $vuetify.breakpoint.xs, 'v-card' : $vuetify.breakpoint.mdAndUp}" id="dashboard">
       <v-card-title><h1 :class="{'xsFont' : $vuetify.breakpoint.xs, 'largeFont' : $vuetify.breakpoint.mdAndUp}">Task Dashboard</h1></v-card-title>
       <v-card-text>
-        <v-data-table dense :headers="headers" :items="tasks" :items-per-page="10" :class="{'xsFont' : $vuetify.breakpoint.xs, 'largeFont' : $vuetify.breakpoint.mdAndUp}" justify="center" ></v-data-table>
+        <v-data-table
+         @click:row="rowClick" 
+         item-key="name" 
+         single-select 
+         dense 
+         :headers="headers" 
+         :items="tasks" 
+         :items-per-page="10" 
+         :class="{'elevation-1 xsFont' : $vuetify.breakpoint.xs, 'elevation-1 largeFont' : $vuetify.breakpoint.mdAndUp}" justify="center" 
+         >
+        
+        </v-data-table>
       </v-card-text>
     </v-card>
     
@@ -12,14 +23,18 @@
 import Tasks from '@/assets/data/site/vue-tasks.json';
   export default {
     name:"SiteDashboard",
+     methods: {
+         itemRowBackground: function (item) {
+           console.log(item);
+             return item.status == 'OK' ? 'style-ok' : item.status == 'Open' ? 'style-open' : 'style-new'
+         },
+         rowClick: function (item, row) {      
+           console.log("clicked"+item);
+           row.select(true);
+          }
+     },
    data(){
-     return {
-        methods: {
-            itemRowBackground: function (item) {
-              console.log(item);
-                return item.status == 'OK' ? 'style-ok' : item.status == 'Open' ? 'style-open' : 'style-new'
-            }
-        },
+     return {       
         tasks: Tasks.tasks,
        headers:[
         {           
@@ -37,9 +52,11 @@ import Tasks from '@/assets/data/site/vue-tasks.json';
    }
   }
 </script>
+<style >
 
+</style>
 <style scoped>
-
+  
 .v-cardPad{
   padding:0%;
 }
