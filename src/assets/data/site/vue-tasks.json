@@ -21,6 +21,10 @@
             "status": "OK"
         },
         {
+            "name": "Layouts & Grid System",
+            "status": "OK"
+        },
+        {
             "name": "JSON-Data Local",
             "status": "OK"
         },
