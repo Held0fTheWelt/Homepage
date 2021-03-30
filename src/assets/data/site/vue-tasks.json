@@ -18,47 +18,47 @@
         },
         {
             "name": "DataTable Coloring",
-            "status": "OK"
+            "status": "Ready"
         },
         {
             "name": "Project Details Component",
-            "status": "OK"
+            "status": "Ready"
         },
         {
             "name": "Portfolio Component",
-            "status": "OK"
+            "status": "Ready"
         },
         {
             "name": "Layouts & Grid System",
-            "status": "OK"
+            "status": "Ready"
         },
         {
             "name": "JSON-Data Local",
-            "status": "OK"
+            "status": "Ready"
         },
         {
             "name": "JSON-Data Axios",
-            "status": "OK"
+            "status": "Ready"
         },
         {
             "name": "VUE-Routing",
-            "status": "OK"
+            "status": "Ready"
         },
         {
             "name": "VUE-Components",
-            "status": "OK"
+            "status": "Ready"
         },
         {
             "name": "Installing Vue Packages",
-            "status": "OK"
+            "status": "Ready"
         },
         {
             "name": "VUE-Basics",
-            "status": "OK"
+            "status": "Ready"
         },
         {
             "name": "Project Management",
-            "status": "OK"
+            "status": "Ready"
         }
     ]
 }

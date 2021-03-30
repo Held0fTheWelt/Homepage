@@ -27,7 +27,7 @@ import Tasks from '@/assets/data/site/vue-tasks.json';
      methods: {
          itemRowBackground: function (item) {
            console.log(item.status);
-             return item.status === 'OK' ? 'style-ok' : item.status === 'Open' ? 'style-open' : 'style-new'
+             return item.status === 'Ready' ? 'style-ok' : item.status === 'Open' ? 'style-open' : 'style-new'
          },
          rowClick: function (item, row) {      
            console.log("clicked"+item);
