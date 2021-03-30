@@ -97,32 +97,14 @@ export default {
 </script>
 
 <style scoped>
-.shortStory{
-  padding-left: 45%;
-  text-align: left;
-  white-space: pre;
-  line-height: 1.2em;
-}
-
-h1 {
-  /* text-align: center; */
-}
-
 .alignCenter{
   text-align: center;
-}
-
-p{
-   white-space: pre;
-   line-height: 1.6em;
 }
 
 video {
 	object-fit: contain;
 	width:100%;
-	/*height:80%; */
   padding-left: 20px;
   padding-right: 20px;
-  float:left;
 }
 </style>
