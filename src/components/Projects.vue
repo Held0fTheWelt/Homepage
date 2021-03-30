@@ -1,15 +1,16 @@
 <template>
   <router-link class="projectLink" :to="{name: 'Project' , params: {id: project.id }}">
-    <v-card v-if="$vuetify.breakpoint.xs" class="mx-auto project-xs">
+    <v-card v-if="$vuetify.breakpoint.smAndDown" class="mx-auto project-xs">
       <v-row>
         <v-col cols="12"  class="hoverData">
             <!-- Image goes here -->
             <v-img v-bind:src="image" alt="Project Image"/>
         </v-col>
+      </v-row>
         <!-- Display Data-->
         <v-row cols="12"  class="hoverData">
             <v-col>
-                <h3>@ {{project.location}} on {{project.date}}</h3> 
+                <h3 >@ {{project.location}} on {{project.date}}</h3> 
             </v-col>
         </v-row>
         <v-row cols="12"  class="hoverData">
@@ -22,13 +23,11 @@
                 {{project.description}}
             </v-col>
         </v-row> 
-        <v-row cols="12" class="hoverData">
+        <v-row cols="12" class="hoverData {'pad-xs' : $vuetify.breakpoint.xs}">
             <v-col>
                 {{project.shortStory}}
             </v-col>
         </v-row> 
-      </v-row>
-      Test
     </v-card>
     <v-card v-if="$vuetify.breakpoint.mdAndUp" class="mx-auto project-large">
         <v-card-text>
@@ -87,29 +86,16 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-p{
-   white-space: pre;
-   line-height: 1.6em;
-}
-
-
 
 h4, h3 {
   text-align: center;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
 
-
+  .project-xs .row .col
+{
+  margin:0%;
+  padding-left:5%;
+}
 
 .hoverData :hover{
   transform: scale(1.03);
@@ -133,6 +119,7 @@ a {
     cursor: pointer;
     border: 1px solid #666666;
     margin-bottom: 20%;  
+    padding: 5%;
     width: 98%;
   }
 </style>
