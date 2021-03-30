@@ -1,6 +1,6 @@
 <template>
   <router-link class="projectLink" :to="{name: 'Project' , params: {id: project.id }}">
-    <v-card v-if="$vuetify.breakpoint.xs" class="mx-auto project-xs">
+    <v-card v-if="$vuetify.breakpoint.smAndDown" class="mx-auto project-xs">
       <v-row>
         <v-col cols="12"  class="hoverData">
             <!-- Image goes here -->
@@ -29,7 +29,7 @@
             </v-col>
         </v-row> 
     </v-card>
-    <v-card v-if="$vuetify.breakpoint.smAndUp" class="mx-auto project-large">
+    <v-card v-if="$vuetify.breakpoint.mdAndUp" class="mx-auto project-large">
         <v-card-text>
         <v-row>
             <v-col cols="7"  class="hoverData">
