@@ -24,24 +24,28 @@
 import Tasks from '@/assets/data/site/vue-tasks.json';
   export default {
     name:"SiteDashboard",
-     methods: {
-         itemRowBackground: function (item) {
-           console.log(item.status);
-             return item.status === 'Ready' ? 'style-ok' : item.status === 'Open' ? 'style-open' : 'style-new'
-         },
-         rowClick: function (item, row) {      
-           console.log("clicked"+item);
-           row.select(true);
-          }
-     },
+    methods: {
+        itemRowBackground: function (item) {
+            return item.status === 'Ready' ? 'style-ok' : item.status === 'Open' ? 'style-open' : 'style-new'
+        },
+        rowClick: function (item, row) { 
+          row.select(true);
+        }
+    },
    data(){
      return {       
         tasks: Tasks.tasks,
        headers:[
+         {           
+           text:'ID',
+           align: 'center',
+           sortable: 'true',
+           value:'id'
+         },
         {           
           text:'Task',
           align: 'left',
-          sortable: 'true',
+          sortable: false,
           value:'name'
         },
         {

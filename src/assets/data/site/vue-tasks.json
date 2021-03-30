@@ -1,62 +1,77 @@
 {
     "tasks":[
         {
+            "id" : 15,
             "name": "Live Data Modification",
             "status": "New"
         },
         {
+            "id" : 14,
             "name": "Login Component",
             "status": "New"
         },
         {
+            "id" : 13,
             "name": "Vue Animations",
             "status": "New"
         },
         {
+            "id" : 12,
             "name": "Contact Component",
             "status": "Open"
         },
         {
+            "id" : 11,
             "name": "DataTable Coloring",
             "status": "Ready"
         },
         {
+            "id" : 10,
             "name": "Project Details Component",
             "status": "Ready"
         },
         {
+            "id" : 9,
             "name": "Portfolio Component",
             "status": "Ready"
         },
         {
+            "id" : 8,
             "name": "Layouts & Grid System",
             "status": "Ready"
         },
         {
+            "id" : 7,
             "name": "JSON-Data Local",
             "status": "Ready"
         },
         {
+            "id" : 6,
             "name": "JSON-Data Axios",
             "status": "Ready"
         },
         {
+            "id" : 5,
             "name": "VUE-Routing",
             "status": "Ready"
         },
         {
+            "id" : 4,
             "name": "VUE-Components",
             "status": "Ready"
         },
         {
+            "id" : 3,
             "name": "Installing Vue Packages",
             "status": "Ready"
         },
         {
+            "id" : 2,
             "name": "VUE-Basics",
             "status": "Ready"
         },
         {
+            "id" : 1,
             "name": "Project Management",
             "status": "Ready"
         }

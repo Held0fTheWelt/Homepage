@@ -18,9 +18,15 @@ import Projects from '@/assets/data/projects/projects.json';
 
        headers:[
         {           
+          text:'ID',
+          align: 'left',
+          sortable: true,
+          value:'id'
+        },
+        {           
           text:'Project',
           align: 'left',
-          sortable: 'true',
+          sortable: false,
           value:'title'
         },
         {
