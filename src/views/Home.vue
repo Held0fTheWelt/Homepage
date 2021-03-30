@@ -2,7 +2,7 @@
   <v-container class="home" >
       <v-row>
         <v-col>
-          <v-card class="mx-auto">
+          <v-card class="mx-auto {'.v-card-xs' : $vuetify.breakpoint.xs, '.v-card-big' : $vuetify.breakpoint.mdAndUp}">
             <SiteDashboard/>
           </v-card>
         </v-col>
@@ -38,7 +38,12 @@ h1{
    width: 100%;
 }
 
-.v-card{
+.v-card-xs{
+  width: 98%;
+  padding:0.15%;
+}
+
+.v-card-big{
   width: 75%;
   padding:0.75%;
 }

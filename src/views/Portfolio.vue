@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import ProjectsComponent from '@/components/Project_Menu.vue';
 import ProjectsData from '@/assets/data/projects/projects.json';
+import ProjectsComponent from '@/components/Projects.vue';
 export default {
     name: "Portfolio",  
   
