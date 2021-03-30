@@ -1,5 +1,5 @@
 .xsFont{
-    font-size: xx-small;
+    font-size: medium;
 }
 
 .theme--dark.v-label {
@@ -16,5 +16,5 @@
   }
 
   .v-card__title{
-    padding:0%;
-  }
+  padding:0%;
+}
