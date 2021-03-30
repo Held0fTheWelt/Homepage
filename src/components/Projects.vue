@@ -1,6 +1,36 @@
 <template>
   <router-link class="projectLink" :to="{name: 'Project' , params: {id: project.id }}">
-    <v-card class="project mx-auto">
+    <v-card v-if="$vuetify.breakpoint.xs" class="mx-auto project-xs">
+      <v-row>
+        <v-col cols="12"  class="hoverData">
+            <!-- Image goes here -->
+            <v-img v-bind:src="image" alt="Project Image"/>
+        </v-col>
+        <!-- Display Data-->
+        <v-row cols="12"  class="hoverData">
+            <v-col>
+                <h3>@ {{project.location}} on {{project.date}}</h3> 
+            </v-col>
+        </v-row>
+        <v-row cols="12"  class="hoverData">
+            <v-col>
+                <h4>{{project.title}}</h4>                        
+            </v-col>
+        </v-row>
+        <v-row cols="12"  class="hoverData">
+            <v-col>
+                {{project.description}}
+            </v-col>
+        </v-row> 
+        <v-row cols="12" class="hoverData">
+            <v-col>
+                {{project.shortStory}}
+            </v-col>
+        </v-row> 
+      </v-row>
+      Test
+    </v-card>
+    <v-card v-if="$vuetify.breakpoint.mdAndUp" class="mx-auto project-large">
         <v-card-text>
         <v-row>
             <v-col cols="7"  class="hoverData">
@@ -62,11 +92,7 @@ p{
    line-height: 1.6em;
 }
 
-img {
-    object-fit: scale-down;
-    width: 100%;
 
-}
 
 h4, h3 {
   text-align: center;
@@ -83,12 +109,7 @@ a {
   color: #42b983;
 }
 
-.project {
-  cursor: pointer;
-  border: 1px solid #666666;
-  margin-bottom: 2%;  
-  width: 55%;
-}
+
 
 .hoverData :hover{
   transform: scale(1.03);
@@ -100,4 +121,18 @@ a {
   color: #f3f3f3;
 }
 
+.project-large {
+    cursor: pointer;
+    border: 1px solid #666666;
+    margin-bottom: 2%;  
+    width: 55%;
+  }
+
+  .project-xs {
+    align-content:center;
+    cursor: pointer;
+    border: 1px solid #666666;
+    margin-bottom: 20%;  
+    width: 98%;
+  }
 </style>

@@ -17,3 +17,16 @@ h1
 {
     min-height: 15px;
 }
+
+img {
+    object-fit: scale-down;
+    width: 100%;
+
+}
+
+.project-large {
+    cursor: pointer;
+    border: 1px solid #666666;
+    margin-bottom: 2%;  
+    width: 55%;
+  }
