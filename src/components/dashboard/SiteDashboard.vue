@@ -22,7 +22,7 @@ import Tasks from '@/assets/data/site/vue-tasks.json';
         tasks: Tasks.tasks,
        headers:[
         {           
-          text:'SiteTask',
+          text:'Task',
           align: 'left',
           sortable: 'true',
           value:'name'
