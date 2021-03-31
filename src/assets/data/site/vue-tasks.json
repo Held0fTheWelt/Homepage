@@ -23,12 +23,12 @@
         {
             "id" : 13,
             "name": "Contact Component",
-            "status": "Open"
+            "status": "Ready"
         },
         {
             "id" : 12,
             "name": "VUE Forms",
-            "status": "Open"
+            "status": "Ready"
         },
         {
             "id" : 11,
