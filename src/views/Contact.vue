@@ -7,6 +7,8 @@
             <v-text-field label="Name" type="text"/>
             <v-text-field label="Email" type="email"/>
             <v-autocomplete label="Which type of Message do you want to send?" :items="messageType"></v-autocomplete>
+            <v-textarea label="Message" type="text" no-resize></v-textarea>
+            <v-btn type="submit" color="primary">Submit</v-btn>
             <!-- <v-textarea label="Message" type="text"><v-textarea> -->
           </v-card>
         </v-col>
