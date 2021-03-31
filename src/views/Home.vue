@@ -6,7 +6,7 @@
             <SiteDashboard/>
           </v-card>
         </v-col>
-      </v-row>
+      </v-row>      
       <v-row>
         <v-col>
           <v-card class="mx-auto">
@@ -14,11 +14,17 @@
           </v-card>
         </v-col>
       </v-row>
+      <v-row>
+        <v-col>
+            <LogoVideo/>
+        </v-col>
+      </v-row>
   </v-container>
 </template>
 
 <script>
 // @ is an alias to /src
+import LogoVideo from '@/components/LogoVideo.vue';
 import SiteDashboard from '@/components/dashboard/SiteDashboard.vue';
 import ProjectDashboard from '@/components/dashboard/ProjectDashboard.vue';
 
@@ -26,6 +32,7 @@ export default {
       name: "Home",  
   
     components: {
+      LogoVideo,
       SiteDashboard,
     ProjectDashboard,
   },
