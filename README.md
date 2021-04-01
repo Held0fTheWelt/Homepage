@@ -30,7 +30,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 https://jsonformatter.curiousconcept.com/#
 
 ## Seite Formatieren - Entfernt überflüssige Zeichen, passt das Tabbing an
-Rechtsklick -> Format Document 
+Rechtsklick -> Format Document  || Shift + Alt + F
 
 ### Vue UI
 vue ui (z.b. Axios hinzufügen)
