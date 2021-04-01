@@ -10,7 +10,7 @@
 
 <script>
 import ProjectsData from '@/assets/data/projects/projects.json';
-import ProjectsComponent from '@/components/Projects.vue';
+import ProjectsComponent from '@/components/projects/Projects.vue';
 export default {
     name: "Portfolio",  
   

@@ -78,7 +78,7 @@
     },
     data(){
       return {
-        image : require('../assets/images/projects/' + this.project.id + '/image_big_logo.png')
+        image : require('@/assets/images/projects/' + this.project.id + '/image_big_logo.png')
       }
     },
   }

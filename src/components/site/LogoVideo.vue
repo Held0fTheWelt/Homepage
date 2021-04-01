@@ -17,7 +17,7 @@
   export default {
     data() {
     return {
-      video : require('../assets/videos/Logo.mp4')
+      video : require('@/assets/videos/Logo.mp4')
     };
   },
   }

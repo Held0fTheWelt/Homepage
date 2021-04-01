@@ -24,7 +24,7 @@
 
 <script>
 // @ is an alias to /src
-import LogoVideo from '@/components/LogoVideo.vue';
+import LogoVideo from '@/components/site/LogoVideo.vue';
 import SiteDashboard from '@/components/dashboard/SiteDashboard.vue';
 import ProjectDashboard from '@/components/dashboard/ProjectDashboard.vue';
 
