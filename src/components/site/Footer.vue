@@ -1,10 +1,10 @@
 <template>
   <div id="Footer">
-    <v-footer v-bind="localAttrs" :padless="padless" >
+    <v-footer :v-bind="localAttrs" :padless="padless" >
       <v-card flat tile width="100%" class="grey darken-4 text-center" >
         <v-card-text> 
-          <v-btn v-for="link in links"  :key="link"  class="mx-4" icon :href="link.url">
-            <v-icon size="24px" > {{ link.icon }} </v-icon>
+          <v-btn v-for="(item, link) in links" :key="link"  class="mx-4" icon :href="item.url">
+            <v-icon size="24px" > {{ item.icon }} </v-icon>
           </v-btn>
         </v-card-text>
         <v-divider></v-divider>
@@ -57,7 +57,7 @@
       padless: false,
       variant: 'default',
     }),
-    computed: {
+    methods: {
       localAttrs () {
         const attrs = {}
 
