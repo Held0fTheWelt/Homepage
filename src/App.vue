@@ -40,8 +40,9 @@ table.v-table tbody td, table.v-table tbody th {
 } 
 
 /*** Fade Transitions */
+/* Slide Left */
 .slide-fade-enter{
-  transform: translate(10%);
+  transform: translateX(10%);
   opacity: 0;
 }
 
@@ -51,9 +52,21 @@ table.v-table tbody td, table.v-table tbody th {
 }
 
 .slide-fade-leave-to{
-  transform: translate(-10%);
+  transform: translateX(-10%);
   opacity: 0;
 }
+
+/* Slide Up */
+.slide-up-enter{
+  transform: translateY(10%);
+  opacity: 0;
+}
+
+.slide-up-enter-active {
+  transition: all 0.2s ease;
+}
+
+
 /*** Fade Transitions */
 .fade-enter{
   opacity: 0;
