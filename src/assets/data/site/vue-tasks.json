@@ -1,14 +1,19 @@
 {
     "tasks":[
         {
-            "id" : 17   ,
+            "id" : 18   ,
             "name": "Live Data Modification",
             "status": "New"
         },
         {
-            "id" : 16,
+            "id" : 17,
             "name": "Login Component",
             "status": "New"
+        },
+        {
+            "id" : 16,
+            "name": "Page Transitions",
+            "status": "Ready"
         },
         {
             "id" : 15,
