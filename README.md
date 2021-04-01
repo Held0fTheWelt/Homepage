@@ -1,5 +1,8 @@
 # homepage
 
+## Install Vue
+npm install -g @vue/cli
+
 ## Project setup
 ```
 npm install
