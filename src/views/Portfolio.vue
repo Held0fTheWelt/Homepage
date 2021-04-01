@@ -12,10 +12,9 @@
 import ProjectsData from '@/assets/data/projects/projects.json';
 import ProjectsComponent from '@/components/projects/Projects.vue';
 export default {
-    name: "Portfolio",  
-  
-    components: {
-      ProjectsComponent,
+  name: "Portfolio",  
+  components: {
+    ProjectsComponent,
   },
   data(){
     return {
@@ -25,6 +24,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 
+#content{
+  background-color: rgba(0, 0, 0, 0);
+  background-attachment: fixed;
+  background-image: url('../assets/images/projects/preview.png');
+}
 </style>
