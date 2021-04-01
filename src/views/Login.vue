@@ -1,22 +1,19 @@
 <template>
-    <div>
-        <Login/>
-    </div>
+  <div>
+    <Login />
+  </div>
 </template>
 
 <script>
-import Login from '@/components/management/Login.vue';
+import Login from '@/components/management/Login.vue'
 
 export default {
-    name: "LoginPage",  
-  
-    components: {
+  name: 'LoginPage',
+
+  components: {
     Login,
   },
-
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

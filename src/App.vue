@@ -2,23 +2,23 @@
   <v-app id="vApp">
     <Navbar />
     <!-- <v-main> -->
-      <v-main id="content">
-        <transition name="slide-fade" mode="out-in">
-          <router-view></router-view>
-        </transition>
-      </v-main>
+    <v-main id="content">
+      <transition name="slide-fade" mode="out-in">
+        <router-view></router-view>
+      </transition>
+    </v-main>
     <!-- </v-main> -->
     <Footer />
   </v-app>
 </template>
 
 <script>
-import Navbar from '@/components/site/Navbar.vue';
-import Footer from '@/components/site/Footer.vue';
+import Navbar from '@/components/site/Navbar.vue'
+import Footer from '@/components/site/Footer.vue'
 
 export default {
-  name: "App",  
-  
+  name: 'App',
+
   components: {
     Navbar,
     Footer,
@@ -27,21 +27,21 @@ export default {
   data: () => ({
     //
   }),
-};
+}
 </script>
 <style>
-#content
-{
- width: 100%; 
+#content {
+  width: 100%;
 }
 
-table.v-table tbody td, table.v-table tbody th {
-    height: 19px;
-} 
+table.v-table tbody td,
+table.v-table tbody th {
+  height: 19px;
+}
 
 /*** Fade Transitions */
 /* Slide Left */
-.slide-fade-enter{
+.slide-fade-enter {
   transform: translateX(10%);
   opacity: 0;
 }
@@ -51,13 +51,13 @@ table.v-table tbody td, table.v-table tbody th {
   transition: all 0.2s ease;
 }
 
-.slide-fade-leave-to{
+.slide-fade-leave-to {
   transform: translateX(-10%);
   opacity: 0;
 }
 
 /* Slide Up */
-.slide-up-enter{
+.slide-up-enter {
   transform: translateY(10%);
   opacity: 0;
 }
@@ -66,9 +66,8 @@ table.v-table tbody td, table.v-table tbody th {
   transition: all 0.2s ease;
 }
 
-
 /*** Fade Transitions */
-.fade-enter{
+.fade-enter {
   opacity: 0;
 }
 
@@ -77,7 +76,7 @@ table.v-table tbody td, table.v-table tbody th {
   transition: opacity 0.5s ease-out;
 }
 
-.fade-leave-to{
+.fade-leave-to {
   opacity: 0;
 }
 </style>

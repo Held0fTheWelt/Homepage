@@ -1,16 +1,16 @@
 <template>
-  <Project :id="id"/>
+  <Project :id="id" />
   <!-- {id: project.id -->
 </template>
 
 <script>
-import Project from '@/components/projects/Project.vue';
+import Project from '@/components/projects/Project.vue'
 
 export default {
-  props: ["id"],
-  
+  props: ['id'],
+
   components: {
     Project,
   },
-};
+}
 </script>
