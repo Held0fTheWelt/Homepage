@@ -1,4 +1,4 @@
-<template>
+<template><div>
     <router-link class="projectLink" :to="{name: 'Project' , params: {id: project.id }}">
       <v-card v-if="$vuetify.breakpoint.smAndDown" class="mx-auto project-xs">
         <v-row>
@@ -64,6 +64,7 @@
           </v-card-text>   
       </v-card>
     </router-link>
+          </div>
 </template>
 
 <script>

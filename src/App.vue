@@ -3,9 +3,9 @@
     <Navbar />
     <!-- <v-main> -->
       <v-main id="content">
-        <transition name="slide-fade" mode="out-in">
+        <!-- <transition name="slide-fade" mode="out-in"> -->
           <router-view></router-view>
-        </transition>
+        <!-- </transition> -->
       </v-main>
     <!-- </v-main> -->
     <Footer />
