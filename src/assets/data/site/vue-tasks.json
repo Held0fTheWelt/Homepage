@@ -1,97 +1,97 @@
 {
-    "tasks":[
+    "tasks": [
         {
-            "id" : 19   ,
+            "id": 19,
             "name": "Live Data Modification",
             "status": "New"
         },
         {
-            "id" : 18,
+            "id": 18,
             "name": "Login Component",
             "status": "New"
         },
         {
-            "id" : 17,
+            "id": 17,
             "name": "Transition Groups",
             "status": "Open"
         },
         {
-            "id" : 16,
+            "id": 16,
             "name": "Page Transitions",
             "status": "Ready"
         },
         {
-            "id" : 15,
+            "id": 15,
             "name": "Vue Animations",
             "status": "Open"
         },
         {
-            "id" : 14,
+            "id": 14,
             "name": "LogoVideo Component",
             "status": "Ready"
         },
         {
-            "id" : 13,
+            "id": 13,
             "name": "Contact Component",
             "status": "Ready"
         },
         {
-            "id" : 12,
+            "id": 12,
             "name": "VUE Forms",
             "status": "Ready"
         },
         {
-            "id" : 11,
+            "id": 11,
             "name": "DataTable Coloring",
             "status": "Ready"
         },
         {
-            "id" : 10,
+            "id": 10,
             "name": "Project Details Component",
             "status": "Ready"
         },
         {
-            "id" : 9,
+            "id": 9,
             "name": "Portfolio Component",
             "status": "Ready"
         },
         {
-            "id" : 8,
+            "id": 8,
             "name": "Responsive Layouts & Grid System",
             "status": "Ready"
         },
         {
-            "id" : 7,
+            "id": 7,
             "name": "JSON-Data Local",
             "status": "Ready"
         },
         {
-            "id" : 6,
+            "id": 6,
             "name": "JSON-Data Axios",
             "status": "Ready"
         },
         {
-            "id" : 5,
+            "id": 5,
             "name": "VUE-Routing",
             "status": "Ready"
         },
         {
-            "id" : 4,
+            "id": 4,
             "name": "VUE-Components",
             "status": "Ready"
         },
         {
-            "id" : 3,
+            "id": 3,
             "name": "Installing Vue Packages",
             "status": "Ready"
         },
         {
-            "id" : 2,
+            "id": 2,
             "name": "VUE-Basics",
             "status": "Ready"
         },
         {
-            "id" : 1,
+            "id": 1,
             "name": "Project Management",
             "status": "Ready"
         }

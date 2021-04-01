@@ -9,53 +9,63 @@
       "date": "Octobre 30 2017",
       "status": "Finished",
       "shortStory": "My first assignment at SAE was to write a mini-game.\nSince I already had skills with Unity and C#, and enjoyed playing with a little wooden game from my childhood. I decided that Three Way Cube should be my first mini-game.",
-      "specs": [{
-        "engine": "Unity 2017",
-        "language" : "",
-        "requirements" :
-        [{
-          "name" : "PC",
-          "system" : "Windows 10",
-          "cpu" : "Intel Core2 Duo / AMD X2 CPU 2.2 GHz",
-          "ram" : "4 GB RAM",          
-          "gpu" : "Geforce GTX275 / ATI 4670HD",
-          "storage" : "500 MB",
-          "peripherie" : 
-          [{
-            "keyboard" : true,
-            "mouse" : true
-          }]
-        }]
-      }],
+      "specs": [
+        {
+          "engine": "Unity 2017",
+          "language": "",
+          "requirements": [
+            {
+              "name": "PC",
+              "system": "Windows 10",
+              "cpu": "Intel Core2 Duo / AMD X2 CPU 2.2 GHz",
+              "ram": "4 GB RAM",
+              "gpu": "Geforce GTX275 / ATI 4670HD",
+              "storage": "500 MB",
+              "peripherie": [
+                {
+                  "keyboard": true,
+                  "mouse": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "story": "",
-      "timeline": 
-      [{
-        "start" : "1.10.2017",
-        "end" : "30.11.2017"
-      }],
-      "budget" : 
-      [{
-        "assets" : "",
-        "storage" : "",
-        "paid working hours" : "",
-        "total" : ""
-      }],
-      "insight": 
-      [{
-        "idea": 
-        [{
-          "story" : ""
-        }],
-        "concept": 
-        [{
-          "story" : ""
-        }],
-        "implementation": 
-        [{
-          "story" : ""
-        }],
-        "mark" : "1.7"
-      }]
+      "timeline": [
+        {
+          "start": "1.10.2017",
+          "end": "30.11.2017"
+        }
+      ],
+      "budget": [
+        {
+          "assets": "",
+          "storage": "",
+          "paid working hours": "",
+          "total": ""
+        }
+      ],
+      "insight": [
+        {
+          "idea": [
+            {
+              "story": ""
+            }
+          ],
+          "concept": [
+            {
+              "story": ""
+            }
+          ],
+          "implementation": [
+            {
+              "story": ""
+            }
+          ],
+          "mark": "1.7"
+        }
+      ]
     },
     {
       "id": 2,
@@ -66,28 +76,31 @@
       "date": "March 30 2018",
       "status": "Finished",
       "shortStory": "This project was made out of an idea.\nOur first group project was driven by the belief to walk in VR like normal walk, and go for a hunt in a forest.\nThis forest is set on an island, made with World Machine and loaded with World Streamer.",
-      "specs": [{
-        "engine": "Unity 2018",
-        "language" : "",
-        "requirements" :
-        [{
-          "name" : "PC",
-          "system" : "Windows 10",
-          "cpu" : "Intel Core i-5",
-          "ram" : "16 GB RAM",          
-          "gpu" : "Geforce GTX970",
-          "storage" : "1500 MB",
-          "peripherie" : [
+      "specs": [
+        {
+          "engine": "Unity 2018",
+          "language": "",
+          "requirements": [
             {
-              "keyboard" : true,
-              "htc-vive" : true
+              "name": "PC",
+              "system": "Windows 10",
+              "cpu": "Intel Core i-5",
+              "ram": "16 GB RAM",
+              "gpu": "Geforce GTX970",
+              "storage": "1500 MB",
+              "peripherie": [
+                {
+                  "keyboard": true,
+                  "htc-vive": true
+                }
+              ]
             }
           ]
-        }]
-      }],
+        }
+      ],
       "story": "",
       "timeline": [],
-      "budget" : [],
+      "budget": [],
       "insight": []
     },
     {
@@ -99,32 +112,37 @@
       "date": "April 30 2018",
       "status": "Finished",
       "shortStory": "Satellites is created in a very short period of time, and realizes the visualization of orbits\nand rotations in one application.",
-      "specs": [{
-        "engine": "Unity 2017",
-        "language" : "",
-        "requirements" :
-        [{
+      "specs": [
+        {
           "engine": "Unity 2017",
-          "language" : "",
-          "requirements" :
-          [{
-            "name" : "PC",
-            "system" : "Windows 10",
-            "cpu" : "Intel Core2 Duo / AMD X2 CPU 2.2 GHz",
-            "ram" : "4 GB RAM",          
-            "gpu" : "Geforce GTX275 / ATI 4670HD",
-            "storage" : "500 MB",
-            "peripherie" : [
-              {
-                "keyboard" : true,
-                "mouse" : true
-              }
-            ]
-          }]        }]
-      }],
+          "language": "",
+          "requirements": [
+            {
+              "engine": "Unity 2017",
+              "language": "",
+              "requirements": [
+                {
+                  "name": "PC",
+                  "system": "Windows 10",
+                  "cpu": "Intel Core2 Duo / AMD X2 CPU 2.2 GHz",
+                  "ram": "4 GB RAM",
+                  "gpu": "Geforce GTX275 / ATI 4670HD",
+                  "storage": "500 MB",
+                  "peripherie": [
+                    {
+                      "keyboard": true,
+                      "mouse": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "story": "",
       "timeline": [],
-      "budget" : [],
+      "budget": [],
       "insight": []
     },
     {
@@ -136,28 +154,31 @@
       "date": "May 30 2018",
       "status": "Finished",
       "shortStory": "'The Walking Dead' grew out of a school project series for procedural level generation,\nsimple AI movement, and is my first game with a self-created\ntracking shot in the intro.",
-      "specs": [{
-        "engine": "Unity 2017",
-        "language" : "",
-        "requirements" :
-        [{
-          "name" : "PC",
-          "system" : "Windows 10",
-          "cpu" : "Intel Core2 Duo / AMD X2 CPU 2.2 GHz",
-          "ram" : "4 GB RAM",          
-          "gpu" : "Geforce GTX275 / ATI 4670HD",
-          "storage" : "500 MB",
-          "peripherie" : [
+      "specs": [
+        {
+          "engine": "Unity 2017",
+          "language": "",
+          "requirements": [
             {
-              "keyboard" : true,
-              "mouse" : true
+              "name": "PC",
+              "system": "Windows 10",
+              "cpu": "Intel Core2 Duo / AMD X2 CPU 2.2 GHz",
+              "ram": "4 GB RAM",
+              "gpu": "Geforce GTX275 / ATI 4670HD",
+              "storage": "500 MB",
+              "peripherie": [
+                {
+                  "keyboard": true,
+                  "mouse": true
+                }
+              ]
             }
           ]
-        }]
-      }],
+        }
+      ],
       "story": "",
       "timeline": [],
-      "budget" : [],
+      "budget": [],
       "insight": []
     },
     {
@@ -169,30 +190,33 @@
       "date": "July 30 2018",
       "status": "Finished",
       "shortStory": "",
-      "specs": [{
-      "engine": "Unity 2017",
-      "language" : "",
-      "requirements" :
-      [{
-        "name" : "PC",
-        "system" : "Windows 10",
-        "cpu" : "Intel Core i-5",
-        "ram" : "16 GB RAM",          
-        "gpu" : "Geforce GTX970",
-        "storage" : "1500 MB",
-        "peripherie" : [
-          {
-            "keyboard" : true,
-            "htc-vive" : true,
-            "gamepad" : true,
-            "gt-driving-force" : true
-          }
-        ]
-       }]
-      }],
+      "specs": [
+        {
+          "engine": "Unity 2017",
+          "language": "",
+          "requirements": [
+            {
+              "name": "PC",
+              "system": "Windows 10",
+              "cpu": "Intel Core i-5",
+              "ram": "16 GB RAM",
+              "gpu": "Geforce GTX970",
+              "storage": "1500 MB",
+              "peripherie": [
+                {
+                  "keyboard": true,
+                  "htc-vive": true,
+                  "gamepad": true,
+                  "gt-driving-force": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "story": "",
       "timeline": [],
-      "budget" : [],
+      "budget": [],
       "insight": []
     },
     {
@@ -204,30 +228,33 @@
       "date": "July 30 2018",
       "status": "Finished",
       "shortStory": "",
-      "specs": [{
-        "engine": "Unity 2017",
-        "language" : "",
-        "requirements" :
-        [{
-          "name" : "PC",
-          "system" : "Windows 10",
-          "cpu" : "Intel Core2 Duo / AMD X2 CPU 2.2 GHz",
-          "ram" : "4 GB RAM",          
-          "gpu" : "Geforce GTX275 / ATI 4670HD",
-          "storage" : "500 MB",
-          "peripherie" : [
+      "specs": [
+        {
+          "engine": "Unity 2017",
+          "language": "",
+          "requirements": [
             {
-              "keyboard" : true,
-              "mouse" : true,
-              "gamepad" : true,
-              "gt-driving-force" : true
+              "name": "PC",
+              "system": "Windows 10",
+              "cpu": "Intel Core2 Duo / AMD X2 CPU 2.2 GHz",
+              "ram": "4 GB RAM",
+              "gpu": "Geforce GTX275 / ATI 4670HD",
+              "storage": "500 MB",
+              "peripherie": [
+                {
+                  "keyboard": true,
+                  "mouse": true,
+                  "gamepad": true,
+                  "gt-driving-force": true
+                }
+              ]
             }
           ]
-        }]
-      }],
+        }
+      ],
       "story": "",
       "timeline": [],
-      "budget" : [],
+      "budget": [],
       "insight": []
     },
     {
@@ -239,35 +266,39 @@
       "date": "August 30 2018",
       "status": "Finished",
       "shortStory": "",
-      "specs": [{
-        "engine": "Unity 2017",
-        "language" : "",
-        "requirements" :
-        [{
+      "specs": [
+        {
           "engine": "Unity 2017",
-          "language" : "",
-          "requirements" :
-          [{
-            "name" : "PC",
-            "system" : "Windows 10",
-            "cpu" : "Intel Core i-5",
-            "ram" : "16 GB RAM",          
-            "gpu" : "Geforce GTX970",
-            "storage" : "1500 MB",
-            "peripherie" : [
-              {
-                "keyboard" : true,
-                "htc-vive" : true,
-                "thrustmaster" : true,
-                "gamepad" : true
-              }
-            ]
-          }]
-        }]
-      }],
+          "language": "",
+          "requirements": [
+            {
+              "engine": "Unity 2017",
+              "language": "",
+              "requirements": [
+                {
+                  "name": "PC",
+                  "system": "Windows 10",
+                  "cpu": "Intel Core i-5",
+                  "ram": "16 GB RAM",
+                  "gpu": "Geforce GTX970",
+                  "storage": "1500 MB",
+                  "peripherie": [
+                    {
+                      "keyboard": true,
+                      "htc-vive": true,
+                      "thrustmaster": true,
+                      "gamepad": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "story": "",
       "timeline": [],
-      "budget" : [],
+      "budget": [],
       "insight": []
     },
     {
@@ -279,28 +310,31 @@
       "date": "Octobre 30 2018",
       "status": "Finished",
       "shortStory": "",
-      "specs": [{
-        "engine": "Unity 2017",
-        "language" : "",
-        "requirements" :
-        [{
-          "name" : "PC",
-          "system" : "Windows 10",
-          "cpu" : "Intel Core i-5",
-          "ram" : "16 GB RAM",          
-          "gpu" : "Geforce GTX970",
-          "storage" : "500 MB",
-          "peripherie" : [
+      "specs": [
+        {
+          "engine": "Unity 2017",
+          "language": "",
+          "requirements": [
             {
-              "keyboard" : true,
-              "mouse" : true
+              "name": "PC",
+              "system": "Windows 10",
+              "cpu": "Intel Core i-5",
+              "ram": "16 GB RAM",
+              "gpu": "Geforce GTX970",
+              "storage": "500 MB",
+              "peripherie": [
+                {
+                  "keyboard": true,
+                  "mouse": true
+                }
+              ]
             }
           ]
-        }]
-      }],
+        }
+      ],
       "story": "",
       "timeline": [],
-      "budget" : [],
+      "budget": [],
       "insight": []
     }
   ]
