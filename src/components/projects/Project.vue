@@ -69,14 +69,24 @@
         </v-col>
       </v-row>
     </div>
+
+    <v-row>
+      <v-col cols="12">
+        <Client/>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
 <script>
 import EventService from '@/services/EventService.js'
+import Client from '@/components/projects/WebClient.vue'
 
 export default {
   props: ['id'],
+  components: {
+    Client,
+  },
   data() {
     return {
       project: null,
