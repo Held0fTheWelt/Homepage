@@ -1,6 +1,16 @@
 {
     "tasks": [
         {
+            "id": 21,
+            "name": "Live Data Modification",
+            "status": "New"
+        },
+        {
+            "id": 20,
+            "name": "Generic Video Component",
+            "status": "Ready"
+        },
+        {
             "id": 19,
             "name": "Live Data Modification",
             "status": "New"
