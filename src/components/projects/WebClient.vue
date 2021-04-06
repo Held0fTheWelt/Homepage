@@ -6,11 +6,18 @@
         </v-container>
         <v-container id="loading-cover" style="display:none;">
             <v-container id="unity-loading-bar">
-                <v-container id="unity-logo"><v-img src="@/assets/logo.png"></v-container>
-                <v-container id="unity-progress-bar-empty" style="display: none;">
-                    <v-container id="unity-progress-bar-full"></v-container>
-                </v-container>
-                <v-container class="spinner"></v-container>
+            <v-container id="unity-logo">
+                <v-img alt="Yves Tanas Logo"
+                    class="shrink mr-2"
+                    contain
+                    src="@/assets/logo.png"
+                    transition="scale-transition"
+                    width="40"></v-img>
+            </v-container>
+            <v-container id="unity-progress-bar-empty" style="display: none;">
+                <v-container id="unity-progress-bar-full"></v-container>
+            </v-container>
+            <v-container class="spinner"></v-container>
             </v-container>
         </v-container>
         <v-container id="unity-fullscreen-button" style="display: none;"/>
