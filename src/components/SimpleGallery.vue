@@ -81,14 +81,12 @@ export default {
   name: 'SimpleGallery',
   methods: {
     Down: function () {
-        if(this.id > 1)
-        {this.id--;}
-        this.currentID = this.id;
+        if(this.currentID > 1)
+        {this.currentID--;}
     },
     Up: function () {
-        if(this.id < 3)
-        {this.id++;}
-        this.currentID = this.id;
+        if(this.currentID < 3)
+        {this.currentID++;}
     },
   },
   props: {
