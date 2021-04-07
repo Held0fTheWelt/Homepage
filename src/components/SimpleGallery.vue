@@ -1,5 +1,6 @@
 <template>
   <v-card class="mx-auto project-xs">
+      <v-row><v-col class="12">Test</v-col></v-row>
     <v-row cols="12" class="hoverData">
       <v-col>
         <v-img v-bind:src="image" alt="Project Image" />
