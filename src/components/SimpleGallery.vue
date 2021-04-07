@@ -13,8 +13,38 @@
           alt="Click Left Button"
         />
       </v-col>
-      <v-col class="gal_center"     >
-        Center
+      <v-col class="gal_center">
+        <v-row>
+          <v-col><v-spacer /></v-col>
+          <v-col cols="1">
+            <v-img
+              class="gal_but_select"
+              v-bind:src="selection"
+              alt="Click First Image"
+            >
+                        <v-img
+              class="gal_but_selected"
+              v-bind:src="selected"
+              alt="First Image selected"
+            />
+            </v-img>
+          </v-col>
+          <v-col cols="1">
+            <v-img
+              class="gal_but_select"
+              v-bind:src="selection"
+              alt="Click Second Image"
+            />
+          </v-col>
+          <v-col cols="1">
+            <v-img
+              class="gal_but_select"
+              v-bind:src="selection"
+              alt="Click Third Image"
+            />
+          </v-col>
+          <v-col><v-spacer /></v-col>
+        </v-row>
       </v-col>
       <v-col class="gal_right" cols="1">
         <v-img
@@ -45,12 +75,19 @@ export default {
         '/image_big_logo.png'),
       clickLeft: require('@/assets/images/util/arrow_left.png'),
       clickRight: require('@/assets/images/util/arrow_right.png'),
+      selection: require('@/assets/images/util/dot.png'),
+      selected: require('@/assets/images/util/dotselected.png'),
     }
   },
 }
 </script>
 
 <style scoped>
+.gal_but_select {
+}
+.gal_but_selected {
+    width: 95%;
+}
 .gal_but_left {
 }
 .gal_but_right {
