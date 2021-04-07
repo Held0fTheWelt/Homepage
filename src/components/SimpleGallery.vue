@@ -8,6 +8,7 @@
     <v-row cols="12" class="hoverData {'pad-xs' : $vuetify.breakpoint.xs}">
       <v-col class="gal_left" cols="1">
         <v-img
+          v-on:click="Down"
           class="gal_but_left"
           v-bind:src="clickLeft"
           alt="Click Left Button"
@@ -22,32 +23,48 @@
               v-bind:src="selection"
               alt="Click First Image"
             >
-                        <v-img
-              class="gal_but_selected"
-              v-bind:src="selected"
-              alt="First Image selected"
-            />
+              <v-img
+                v-if="currentID == 1"
+                class="gal_but_selected"
+                v-bind:src="selected"
+                alt="First Image selected"
+              />
             </v-img>
           </v-col>
           <v-col cols="1">
             <v-img
               class="gal_but_select"
               v-bind:src="selection"
-              alt="Click Second Image"
-            />
+              alt="Click First Image"
+            >
+              <v-img
+                v-if="currentID == 2"
+                class="gal_but_selected"
+                v-bind:src="selected"
+                alt="First Image selected"
+              />
+            </v-img>
           </v-col>
           <v-col cols="1">
             <v-img
               class="gal_but_select"
               v-bind:src="selection"
-              alt="Click Third Image"
-            />
+              alt="Click First Image"
+            >
+              <v-img
+                v-if="currentID == 3"
+                class="gal_but_selected"
+                v-bind:src="selected"
+                alt="First Image selected"
+              />
+            </v-img>
           </v-col>
           <v-col><v-spacer /></v-col>
         </v-row>
       </v-col>
       <v-col class="gal_right" cols="1">
         <v-img
+          v-on:click="Up"
           class="gal_but_right"
           v-bind:src="clickRight"
           alt="Click Right Button"
@@ -62,7 +79,22 @@
 
 export default {
   name: 'SimpleGallery',
+  methods: {
+    Down: function () {
+        if(this.id > 1)
+        {this.id--;}
+        this.currentID = this.id;
+    },
+    Up: function () {
+        if(this.id < 3)
+        {this.id++;}
+        this.currentID = this.id;
+    },
+  },
   props: {
+    id: {
+      type: Number,
+    },
     project: {
       type: Object,
       required: true,
@@ -77,16 +109,21 @@ export default {
       clickRight: require('@/assets/images/util/arrow_right.png'),
       selection: require('@/assets/images/util/dot.png'),
       selected: require('@/assets/images/util/dotselected.png'),
+      currentID: 0,
     }
+  },
+  created() {
+    this.id = 1
+    this.currentID = this.id
   },
 }
 </script>
 
 <style scoped>
-.gal_but_select {
+.alilgn {
+  align-self: center;
 }
 .gal_but_selected {
-    width: 95%;
 }
 .gal_but_left {
 }
