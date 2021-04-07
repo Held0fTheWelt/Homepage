@@ -17,12 +17,12 @@
 export default {
   name: 'VideoComponent',
   props: {
-    msg: String,
+    url: String,
     required: true,
   },
   data() {
     return {
-      video: require(this.msg),
+      video: require(this.url),
     }
   },
 }
