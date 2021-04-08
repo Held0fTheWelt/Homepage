@@ -1,6 +1,6 @@
 <template>
   <v-card class="mx-auto project-xs">
-      <v-row><v-col class="12">Test</v-col></v-row>
+    <v-row><v-col class="12">Test</v-col></v-row>
     <v-row cols="12" class="hoverData">
       <v-col>
         <v-img v-bind:src="image" alt="Project Image" />
@@ -9,19 +9,20 @@
     <v-row cols="12" class="hoverData {'pad-xs' : $vuetify.breakpoint.xs}">
       <v-col class="gal_left" cols="1">
         <v-img
-          v-on:click="Down"
+          v-on:click="click(true)"
           class="gal_but_left"
           v-bind:src="clickLeft"
           alt="Click Left Button"
         />
       </v-col>
       <v-col class="gal_center">
-        <v-row>
+        <v-row >
           <v-col><v-spacer /></v-col>
           <v-col cols="1">
             <v-img
               class="gal_but_select"
               v-bind:src="selection"
+              v-on:click="select(1)"
               alt="Click First Image"
             >
               <v-img
@@ -36,6 +37,7 @@
             <v-img
               class="gal_but_select"
               v-bind:src="selection"
+              v-on:click="select(2)"
               alt="Click First Image"
             >
               <v-img
@@ -50,6 +52,7 @@
             <v-img
               class="gal_but_select"
               v-bind:src="selection"
+              v-on:click="select(3)"
               alt="Click First Image"
             >
               <v-img
@@ -65,7 +68,7 @@
       </v-col>
       <v-col class="gal_right" cols="1">
         <v-img
-          v-on:click="Up"
+          v-on:click="click(false)"
           class="gal_but_right"
           v-bind:src="clickRight"
           alt="Click Right Button"
@@ -81,14 +84,22 @@
 export default {
   name: 'SimpleGallery',
   methods: {
-    Down: function () {
-        if(this.currentID > 1)
-        {this.currentID--;}
+    click: function (left) {
+      if (left === true) {
+        if (this.currentID > 1) {
+          this.currentID--
+        }
+      } else {
+        if (this.currentID < 3) {
+          this.currentID++
+        }
+      }
     },
-    Up: function () {
-        if(this.currentID < 3)
-        {this.currentID++;}
-    },
+    select: function (id) {
+        this.currentID = id;
+        global.vm.$forceUpdate();
+      }
+    
   },
   props: {
     id: {
