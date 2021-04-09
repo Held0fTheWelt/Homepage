@@ -76,7 +76,7 @@
     </div>
     <v-row>
       <v-col cols="4"> <Specs /></v-col>
-      <v-col cols="4"> <Log/></v-col>
+      <v-col cols="4"> <Log /></v-col>
       <v-col cols="4"> <Download /></v-col>
     </v-row>
     <v-row>
