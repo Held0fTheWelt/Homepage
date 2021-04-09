@@ -65,11 +65,13 @@
       </v-row>
     </div>
     <v-row>
-      <v-col cols="12"> </v-col>
+      <v-col cols="4"> </v-col>
+      <v-col cols="4"> </v-col>
+      <v-col cols="4"> <Download /></v-col>
     </v-row>
     <v-row>
       <v-col cols="12">
-        <Client />
+        
       </v-col>
     </v-row>
   </v-container>
@@ -84,7 +86,8 @@
 // </video>
 
 import EventService from '@/services/EventService.js'
-import Client from '@/components/projects/WebClient.vue'
+import Download from '@/components/projects/Download.vue'
+// import Client from '@/components/projects/WebClient.vue'
 import Gallery from '@/components/SimpleGallery.vue'
 export default {
   props: 
@@ -95,8 +98,9 @@ export default {
     }
   },
   components: {
-    Client,
+    // Client,
     Gallery,
+    Download,
   },
   methods: {
     getImageURL: function(currentShot)
