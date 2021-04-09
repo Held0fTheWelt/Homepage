@@ -38,17 +38,7 @@
     <div v-if="$vuetify.breakpoint.mdAndUp">
       <v-row>
         <v-col cols="7">
-          <Gallery
-            :project="project"
-            :count="4"
-            :videos="[4]"
-            :url="[
-             getURL(1),
-              getURL(2),
-              getURL(3),
-              '@/assets/videos/sLogo.mp4',
-            ]"
-          />
+          <Gallery :count="4" :videos="[4]" :url="[ getImageURL(1), getImageURL(2), getImageURL(3), getVideoURL() ]"/>
         </v-col>
         <v-col cols="5">
 
@@ -97,15 +87,25 @@ import EventService from '@/services/EventService.js'
 import Client from '@/components/projects/WebClient.vue'
 import Gallery from '@/components/SimpleGallery.vue'
 export default {
-  props: ['id'],
+  props: 
+  {
+    id:{
+      type: String,
+      require: true
+    }
+  },
   components: {
     Client,
     Gallery,
   },
   methods: {
-    getURL: function(currentShot)
+    getImageURL: function(currentShot)
     {
       return 'projects/' + (this.id + 1) + '/screenshots/'+ currentShot + '.jpg'
+    },
+    getVideoURL: function()
+    {   
+      return 'projects/' + (this.id + 1) + '/Trailer.mp4'
     }
   },
   data() {
@@ -118,9 +118,6 @@ export default {
     let result = this.id - 1
     this.id = result
     this.project = EventService.getProject(this.id)
-    this.video = require('@/assets/videos/Projects/' +
-      this.project.id +
-      '/Trailer.mp4')
   },
 }
 //<!-- Add "scoped" attribute to limit CSS to this component only <style scoped></style>-->
