@@ -3,11 +3,16 @@
     <div v-if="$vuetify.breakpoint.smAndDown">
       <v-row>
         <v-col cols="12">
-<Gallery
+          <Gallery
             :project="project"
             :count="4"
             :videos="[4]"
-            :url="['', '', '', '@/assets/videos/Logo.mp4']"
+            :url="[
+             '1', //  getURL(1),
+              '2', // getURL(2),
+              '3', // getURL(3),
+              '@/assets/videos/sLogo.mp4',
+            ]"
           />
         </v-col>
       </v-row>
@@ -30,19 +35,23 @@
         </v-col>
       </v-row>
     </div>
-    <div v-if="$vuetify.breakpoint.mdAndUp">  
+    <div v-if="$vuetify.breakpoint.mdAndUp">
       <v-row>
         <v-col cols="7">
           <Gallery
             :project="project"
             :count="4"
             :videos="[4]"
-            :url="['', '', '', '@/assets/videos/Logo.mp4']"
+            :url="[
+             getURL(1),
+              getURL(2),
+              getURL(3),
+              '@/assets/videos/sLogo.mp4',
+            ]"
           />
         </v-col>
         <v-col cols="5">
-          <vcard>
-            <v-card-text>
+
               <v-row class="alignCenter">
                 <v-col
                   ><h1>{{ project.title }}</h1>
@@ -61,8 +70,7 @@
                   {{ project.shortStory }}
                 </v-col>
               </v-row>
-            </v-card-text>
-          </vcard>
+
         </v-col>
       </v-row>
     </div>
@@ -93,6 +101,12 @@ export default {
   components: {
     Client,
     Gallery,
+  },
+  methods: {
+    getURL: function(currentShot)
+    {
+      return 'projects/' + (this.id + 1) + '/screenshots/'+ currentShot + '.jpg'
+    }
   },
   data() {
     return {
