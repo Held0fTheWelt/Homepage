@@ -4,14 +4,13 @@
       <v-row>
         <v-col cols="12">
           <Gallery
-            :project="project"
             :count="4"
             :videos="[4]"
             :url="[
-              '1', //  getURL(1),
-              '2', // getURL(2),
-              '3', // getURL(3),
-              '@/assets/videos/sLogo.mp4',
+              getImageURL(1),
+              getImageURL(2),
+              getImageURL(3),
+              getVideoURL(),
             ]"
           />
         </v-col>
