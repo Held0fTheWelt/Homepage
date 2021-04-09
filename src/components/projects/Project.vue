@@ -1,12 +1,17 @@
 <template>
   <v-container class="projectDetails mx-auto" v-if="project">
-    <!-- <div class="project-image-small">
+    <div class="project-image-small">
       <img v-bind:src="image" alt="Project Image"/>
     </div> 
     <div v-if="$vuetify.breakpoint.smAndDown">
       <v-row>
         <v-col cols="12">
-          <Gallery :project="project" count="4" videos="{4}" />
+<Gallery
+            :project="project"
+            :count="4"
+            :videos="[4]"
+            :url="['', '', '', '@/assets/videos/Logo.mp4']"
+          />
         </v-col>
       </v-row>
       <v-row class="alignCenter">
@@ -28,15 +33,14 @@
         </v-col>
       </v-row>
     </div>
-    <div v-if="$vuetify.breakpoint.mdAndUp">-->
-    <div>
+    <div v-if="$vuetify.breakpoint.mdAndUp">  
       <v-row>
         <v-col cols="7">
           <Gallery
             :project="project"
             :count="4"
             :videos="[4]"
-            :url="['234', '266', '273', '@/assets/videos/Logo.mp4']"
+            :url="['', '', '', '@/assets/videos/Logo.mp4']"
           />
         </v-col>
         <v-col cols="5">
