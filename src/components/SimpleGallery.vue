@@ -1,9 +1,14 @@
 <template>
   <v-card class="mx-auto project-xs">
-    <v-row><v-col class="12">Test</v-col></v-row>
     <v-row cols="12" class="hoverData">
       <v-col>
-        <v-img v-bind:src="image()" alt="Project Image" />
+        <v-img v-if="isImage()" v-bind:src="getImage()" alt="Project Image" rel="preload"/>
+         <video v-else autoplay controls preload>
+           <source v-bind:src="currentVideo" type="video/mp4" rel="preload"/>
+           <!-- <source src="../assets/Logo.ogg" type="video/ogg"> -->
+           Ihr Browser kann dieses Video nicht wiedergeben.<br />
+           Dieser Film zeigt einen Trailer zum Projekt.
+         </video>
       </v-col>
     </v-row>
     <v-row class="hoverData {'pad-xs' : $vuetify.breakpoint.xs}">
@@ -23,6 +28,8 @@
 <script>
 // <v-card v-if="$vuetify.breakpoint.smAndDown" class="mx-auto project-xs">
 
+
+
 export default {
   name: 'SimpleGallery',
   methods: {
@@ -41,35 +48,57 @@ export default {
     //   this.currentID = id
     //   global.vm.$forceUpdate()
     // },
-    image: function () {
+    getVideo: function()
+    {
+      console.log(this.url[this.currentID-1]);
+   //   this.currentVideo = require(this.url[this.currentID] - 1);
+    },
+    getImage: function () {
       return require('@/assets/images/projects/' +
         this.project.id +
         '/screenshots/' +
         this.currentID +
         '.png')
     },
+    isImage: function () {
+      for (let i = 0; i < this.videos.length; i++) {
+        if (this.currentID == this.videos[i]) {
+          return false;
+        }
+      }
+      return true;
+    },
   },
   props: {
-        count: {
+    count: {
       type: Number,
+      required: true,
+    },
+    videos: {
+      type: Array,
       required: true,
     },
     project: {
       type: Object,
       required: true,
     },
+    url: {
+      type: Array,
+      required: true,
+    },
   },
   data() {
     return {
       currentID: 1,
+      currentVideo: require('@/assets/videos/Logo.mp4'),
       clickLeft: require('@/assets/images/util/arrow_left.png'),
       clickRight: require('@/assets/images/util/arrow_right.png'),
       selection: require('@/assets/images/util/dot.png'),
-      selected: require('@/assets/images/util/dotselected.png'),  
+      selected: require('@/assets/images/util/dotselected.png'),    
     }
   },
   created() {
-    this.currentID = 1
+    this.currentID = 1;
   },
 }
 </script>
@@ -122,5 +151,10 @@ h3 {
   margin-bottom: 2%;
   padding: 5%;
   width: 80%;
+}
+
+video {
+  object-fit: contain;
+  width: 100%;
 }
 </style>
