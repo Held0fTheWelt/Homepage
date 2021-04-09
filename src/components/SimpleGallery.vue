@@ -42,7 +42,6 @@ export default {
     //   global.vm.$forceUpdate()
     // },
     image: function () {
-      console.log(this.currentID)
       return require('@/assets/images/projects/' +
         this.project.id +
         '/screenshots/' +
@@ -62,12 +61,7 @@ export default {
       clickLeft: require('@/assets/images/util/arrow_left.png'),
       clickRight: require('@/assets/images/util/arrow_right.png'),
       selection: require('@/assets/images/util/dot.png'),
-      selected: require('@/assets/images/util/dotselected.png'),
-      // image: require('@/assets/images/projects/' +
-      //   this.project.id +
-      //   '/screenshots/' +
-      //   this.currentID +
-      //   '.png'),
+      selected: require('@/assets/images/util/dotselected.png'),  
     }
   },
   created() {
@@ -100,10 +94,10 @@ h3 {
   margin: 0%;
 }
 
-.hoverData :hover {
+/* .hoverData :hover {
   transform: scale(1.03);
-  /* box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2); */
-}
+   box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2); 
+} */
 
 .projectLink {
   text-decoration: none;
