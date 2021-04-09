@@ -6,22 +6,22 @@
     <v-card-text>
       <v-row>
         <v-col cols="12">
-            <h3>Minimum Specifications:</h3>
-             </v-col>
-      </v-row>
-      
-      <v-row>
-        <v-col cols="12"><p>
-            Operating Sytem: <br/>
-            Processor: <br/>
-            Memory: <br/>
-            Graphice: <br/>
-            Storage: <br/>
-            Equipment: 
-            </p>
+          <h3>Minimum Specifications:</h3>
         </v-col>
       </v-row>
-      
+
+      <v-row>
+        <v-col cols="12"
+          ><p>
+            Operating Sytem: <br />
+            Processor: <br />
+            Memory: <br />
+            Graphice: <br />
+            Storage: <br />
+            Equipment:
+          </p>
+        </v-col>
+      </v-row>
     </v-card-text>
   </v-card>
 </template>
@@ -35,7 +35,8 @@ h1 {
   text-align: center;
   width: 100%;
 }
-h3, p {
-    padding-left: 5%;
+h3,
+p {
+  padding-left: 5%;
 }
 </style>
