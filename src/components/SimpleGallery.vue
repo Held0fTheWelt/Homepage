@@ -1,14 +1,19 @@
 <template>
-<v-container>
+  <v-container>
     <v-row cols="12" class="hoverData">
       <v-col>
-        <v-img v-if="isImage()" v-bind:src="getImage()" alt="Project Image" rel="preload"/>
-         <video v-else autoplay controls preload>
-           <source v-bind:src="currentVideo" type="video/mp4" rel="preload"/>
-           <!-- <source src="../assets/Logo.ogg" type="video/ogg"> -->
-           Ihr Browser kann dieses Video nicht wiedergeben.<br />
-           Dieser Film zeigt einen Trailer zum Projekt.
-         </video>
+        <v-img
+          v-if="isImage()"
+          v-bind:src="getImage()"
+          alt="Project Image"
+          rel="preload"
+        />
+        <video v-else autoplay controls preload>
+          <source v-bind:src="currentVideo" type="video/mp4" rel="preload" />
+          <!-- <source src="../assets/Logo.ogg" type="video/ogg"> -->
+          Ihr Browser kann dieses Video nicht wiedergeben.<br />
+          Dieser Film zeigt einen Trailer zum Projekt.
+        </video>
       </v-col>
     </v-row>
     <v-row class="hoverData {'pad-xs' : $vuetify.breakpoint.xs}">
@@ -22,11 +27,10 @@
         ></v-pagination>
       </v-col>
     </v-row>
-</v-container>
+  </v-container>
 </template>
 
 <script>
-
 export default {
   name: 'SimpleGallery',
   methods: {
@@ -45,10 +49,9 @@ export default {
     //   this.currentID = id
     //   global.vm.$forceUpdate()
     // },
-    getVideo: function()
-    {
-      console.log(this.url[this.currentID-1]);
-   //   this.currentVideo = require(this.url[this.currentID] - 1);
+    getVideo: function () {
+      console.log(this.url[this.currentID - 1])
+      //   this.currentVideo = require(this.url[this.currentID] - 1);
     },
     getImage: function () {
       // Hier wird die url abgefragt
@@ -61,10 +64,10 @@ export default {
     isImage: function () {
       for (let i = 0; i < this.videos.length; i++) {
         if (this.currentID == this.videos[i]) {
-          return false;
+          return false
         }
       }
-      return true;
+      return true
     },
   },
   props: {
@@ -88,17 +91,17 @@ export default {
   data() {
     return {
       currentID: 1,
-    currentVideo: require('@/assets/videos/Projects/' +
-      this.project.id +
-      '/Trailer.mp4'),
+      currentVideo: require('@/assets/videos/Projects/' +
+        this.project.id +
+        '/Trailer.mp4'),
       clickLeft: require('@/assets/images/util/arrow_left.png'),
       clickRight: require('@/assets/images/util/arrow_right.png'),
       selection: require('@/assets/images/util/dot.png'),
-      selected: require('@/assets/images/util/dotselected.png'),    
+      selected: require('@/assets/images/util/dotselected.png'),
     }
   },
   created() {
-    this.currentID = 1;
+    this.currentID = 1
   },
 }
 </script>
