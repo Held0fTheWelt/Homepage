@@ -1,8 +1,5 @@
 <template>
   <v-container class="projectDetails mx-auto" v-if="project">
-    <div class="project-image-small">
-      <img v-bind:src="image" alt="Project Image"/>
-    </div> 
     <div v-if="$vuetify.breakpoint.smAndDown">
       <v-row>
         <v-col cols="12">
