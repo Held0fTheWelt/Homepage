@@ -8,7 +8,7 @@
             :count="4"
             :videos="[4]"
             :url="[
-             '1', //  getURL(1),
+              '1', //  getURL(1),
               '2', // getURL(2),
               '3', // getURL(3),
               '@/assets/videos/sLogo.mp4',
@@ -38,29 +38,36 @@
     <div v-if="$vuetify.breakpoint.mdAndUp">
       <v-row>
         <v-col cols="7">
-          <Gallery :count="4" :videos="[4]" :url="[ getImageURL(1), getImageURL(2), getImageURL(3), getVideoURL() ]"/>
+          <Gallery
+            :count="4"
+            :videos="[4]"
+            :url="[
+              getImageURL(1),
+              getImageURL(2),
+              getImageURL(3),
+              getVideoURL(),
+            ]"
+          />
         </v-col>
         <v-col cols="5">
-
-              <v-row class="alignCenter">
-                <v-col
-                  ><h1>{{ project.title }}</h1>
-                </v-col>
-              </v-row>
-              <v-row class="alignCenter">
-                <v-col>@ {{ project.location }} on {{ project.date }} </v-col>
-              </v-row>
-              <v-row>
-                <v-col>
-                  {{ project.description }}
-                </v-col>
-              </v-row>
-              <v-row>
-                <v-col>
-                  {{ project.shortStory }}
-                </v-col>
-              </v-row>
-
+          <v-row class="alignCenter">
+            <v-col
+              ><h1>{{ project.title }}</h1>
+            </v-col>
+          </v-row>
+          <v-row class="alignCenter">
+            <v-col>@ {{ project.location }} on {{ project.date }} </v-col>
+          </v-row>
+          <v-row>
+            <v-col>
+              {{ project.description }}
+            </v-col>
+          </v-row>
+          <v-row>
+            <v-col>
+              {{ project.shortStory }}
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
     </div>
@@ -70,9 +77,7 @@
       <v-col cols="4"> <Download /></v-col>
     </v-row>
     <v-row>
-      <v-col cols="12">
-        
-      </v-col>
+      <v-col cols="12"> </v-col>
     </v-row>
   </v-container>
 </template>
@@ -90,12 +95,11 @@ import Download from '@/components/projects/Download.vue'
 // import Client from '@/components/projects/WebClient.vue'
 import Gallery from '@/components/SimpleGallery.vue'
 export default {
-  props: 
-  {
-    id:{
+  props: {
+    id: {
       type: String,
-      require: true
-    }
+      require: true,
+    },
   },
   components: {
     // Client,
@@ -103,14 +107,14 @@ export default {
     Download,
   },
   methods: {
-    getImageURL: function(currentShot)
-    {
-      return 'projects/' + (this.id + 1) + '/screenshots/'+ currentShot + '.jpg'
+    getImageURL: function (currentShot) {
+      return (
+        'projects/' + (this.id + 1) + '/screenshots/' + currentShot + '.jpg'
+      )
     },
-    getVideoURL: function()
-    {   
+    getVideoURL: function () {
       return 'projects/' + (this.id + 1) + '/Trailer.mp4'
-    }
+    },
   },
   data() {
     return {

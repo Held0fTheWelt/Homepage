@@ -29,9 +29,7 @@
         ></v-row
       >
       <v-row
-        ><v-col cols="12" class="text-center"
-        
-          >
+        ><v-col cols="12" class="text-center">
           <v-btn
             class="vCard_Download"
             depressed
@@ -47,7 +45,9 @@
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {},
+}
 </script>
 
 <style scoped>
@@ -56,7 +56,6 @@ h1 {
   width: 100%;
 }
 .vCard_Download {
-  
   align-self: center;
 }
 </style>

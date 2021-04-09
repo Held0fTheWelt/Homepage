@@ -17,8 +17,10 @@
 export default {
   name: 'VideoComponent',
   props: {
-    url: String,
-    required: true,
+    url: {
+      type: String,
+      required: true,
+    },
   },
   data() {
     return {

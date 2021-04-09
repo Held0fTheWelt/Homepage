@@ -33,8 +33,13 @@
 <script>
 export default {
   name: 'SimpleGallery',
-  computed: { image() { return require("@/assets/images/" + this.url[this.currentID - 1]); } ,
-              video() { return require('@/assets/videos/' + this.url[this.currentID - 1]); }
+  computed: {
+    image() {
+      return require('@/assets/images/' + this.url[this.currentID - 1])
+    },
+    video() {
+      return require('@/assets/videos/' + this.url[this.currentID - 1])
+    },
   },
   methods: {
     isImage: function () {
@@ -71,7 +76,7 @@ export default {
     }
   },
   created() {
-    this.currentID = 1;
+    this.currentID = 1
   },
 }
 </script>
