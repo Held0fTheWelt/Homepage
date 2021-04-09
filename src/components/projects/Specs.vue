@@ -5,14 +5,9 @@
     </v-card-title>
     <v-card-text>
       <v-row>
-        <v-col cols="12">
-          <h3>Minimum Specifications:</h3>
-        </v-col>
-      </v-row>
-
-      <v-row>
         <v-col cols="12"
           ><p>
+          <h3>Minimum Specifications:</h3> <br/>
             Operating Sytem: <br />
             Processor: <br />
             Memory: <br />
