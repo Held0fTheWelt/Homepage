@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto project-xs">
+<v-container>
     <v-row cols="12" class="hoverData">
       <v-col>
         <v-img v-if="isImage()" v-bind:src="getImage()" alt="Project Image" rel="preload"/>
@@ -22,7 +22,7 @@
         ></v-pagination>
       </v-col>
     </v-row>
-  </v-card>
+</v-container>
 </template>
 
 <script>
