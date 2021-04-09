@@ -1,10 +1,10 @@
 <template>
-  <v-container>
+  <v-container v-if="url">
     <v-row cols="12" class="hoverData">
       <v-col>
         <v-img
           v-if="isImage()"
-          v-bind:src="getImage()"
+          v-bind:src="image"
           alt="Project Image"
           rel="preload"
         />
@@ -33,34 +33,8 @@
 <script>
 export default {
   name: 'SimpleGallery',
+  computed: { image() { return require("@/assets/images/" + this.url[this.currentID - 1]); } },
   methods: {
-    // click: function (left) {
-    //   if (left === true) {
-    //     if (this.currentID > 1) {
-    //       this.currentID--
-    //     }
-    //   } else {
-    //     if (this.currentID < 3) {
-    //       this.currentID++
-    //     }
-    //   }
-    // },
-    // select: function (id) {
-    //   this.currentID = id
-    //   global.vm.$forceUpdate()
-    // },
-    getVideo: function () {
-      console.log(this.url[this.currentID - 1])
-      //   this.currentVideo = require(this.url[this.currentID] - 1);
-    },
-    getImage: function () {
-      // Hier wird die url abgefragt
-      return require('@/assets/images/projects/' +
-        this.project.id +
-        '/screenshots/' +
-        this.currentID +
-        '.jpg')
-    },
     isImage: function () {
       for (let i = 0; i < this.videos.length; i++) {
         if (this.currentID == this.videos[i]) {
@@ -101,7 +75,7 @@ export default {
     }
   },
   created() {
-    this.currentID = 1
+    this.currentID = 1;
   },
 }
 </script>
