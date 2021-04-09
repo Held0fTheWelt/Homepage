@@ -31,7 +31,7 @@
     <div v-if="$vuetify.breakpoint.mdAndUp">-->
     <div>
       <v-row>
-        <v-col cols="5">
+        <v-col cols="7">
           <Gallery
             :project="project"
             :count="4"
@@ -39,7 +39,7 @@
             :url="['234', '266', '273', '@/assets/videos/Logo.mp4']"
           />
         </v-col>
-        <v-col cols="7">
+        <v-col cols="5">
           <vcard>
             <v-card-text>
               <v-row class="alignCenter">
