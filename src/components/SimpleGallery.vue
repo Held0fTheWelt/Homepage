@@ -10,7 +10,7 @@
       <v-col cols="12" class="gal_center">
         <v-pagination
           v-model="currentID"
-          :length="3"
+          :length="count"
           circle
           prev-icon="mdi-menu-left"
           next-icon="mdi-menu-right"
@@ -50,6 +50,10 @@ export default {
     },
   },
   props: {
+        count: {
+      type: Number,
+      required: true,
+    },
     project: {
       type: Object,
       required: true,
