@@ -90,7 +90,9 @@ export default {
   data() {
     return {
       currentID: 1,
-      currentVideo: require('@/assets/videos/Logo.mp4'),
+    currentVideo: require('@/assets/videos/Projects/' +
+      this.project.id +
+      '/Trailer.mp4'),
       clickLeft: require('@/assets/images/util/arrow_left.png'),
       clickRight: require('@/assets/images/util/arrow_right.png'),
       selection: require('@/assets/images/util/dot.png'),
