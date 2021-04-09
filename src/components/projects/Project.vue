@@ -2,16 +2,11 @@
   <v-container class="projectDetails mx-auto" v-if="project">
     <!-- <div class="project-image-small">
       <img v-bind:src="image" alt="Project Image"/>
-    </div> -->
+    </div> 
     <div v-if="$vuetify.breakpoint.smAndDown">
       <v-row>
         <v-col cols="12">
-          <video autoplay controls id="logoVideo">
-            <source v-bind:src="video" type="video/mp4" />
-            <!-- <source src="../assets/Logo.ogg" type="video/ogg"> -->
-            Ihr Browser kann dieses Video nicht wiedergeben.<br />
-            Dieser Film zeigt einen Trailer zum Projekt.
-          </video>
+          <Gallery :project="project" count="4" videos="{4}" />
         </v-col>
       </v-row>
       <v-row class="alignCenter">
@@ -33,15 +28,16 @@
         </v-col>
       </v-row>
     </div>
-    <div v-if="$vuetify.breakpoint.mdAndUp">
+    <div v-if="$vuetify.breakpoint.mdAndUp">-->
+    <div>
       <v-row>
         <v-col cols="5">
-          <video autoplay controls id="logoVideo">
-            <source v-bind:src="video" type="video/mp4" />
-            <!-- <source src="../assets/Logo.ogg" type="video/ogg"> -->
-            Ihr Browser kann dieses Video nicht wiedergeben.<br />
-            Dieser Film zeigt einen Trailer zum Projekt.
-          </video>
+          <Gallery
+            :project="project"
+            :count="4"
+            :videos="[4]"
+            :url="['234', '266', '273', '@/assets/videos/Logo.mp4']"
+          />
         </v-col>
         <v-col cols="7">
           <vcard>
@@ -70,19 +66,24 @@
       </v-row>
     </div>
     <v-row>
-      <v-col cols="12">
-        <Gallery :project="project" count="5"/>
-      </v-col>
+      <v-col cols="12"> </v-col>
     </v-row>
     <v-row>
       <v-col cols="12">
-        <Client/>
+        <Client />
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
+// <video autoplay controls id="logoVideo">
+//   <source v-bind:src="video" type="video/mp4" />
+//   <!-- <source src="../assets/Logo.ogg" type="video/ogg"> -->
+//   Ihr Browser kann dieses Video nicht wiedergeben.<br />
+//   Dieser Film zeigt einen Trailer zum Projekt.
+// </video>
+
 import EventService from '@/services/EventService.js'
 import Client from '@/components/projects/WebClient.vue'
 import Gallery from '@/components/SimpleGallery.vue'
