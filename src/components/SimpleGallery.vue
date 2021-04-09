@@ -26,9 +26,6 @@
 </template>
 
 <script>
-// <v-card v-if="$vuetify.breakpoint.smAndDown" class="mx-auto project-xs">
-
-
 
 export default {
   name: 'SimpleGallery',
@@ -54,11 +51,12 @@ export default {
    //   this.currentVideo = require(this.url[this.currentID] - 1);
     },
     getImage: function () {
+      // Hier wird die url abgefragt
       return require('@/assets/images/projects/' +
         this.project.id +
         '/screenshots/' +
         this.currentID +
-        '.png')
+        '.jpg')
     },
     isImage: function () {
       for (let i = 0; i < this.videos.length; i++) {
