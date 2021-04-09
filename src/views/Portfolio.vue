@@ -2,7 +2,7 @@
   <v-container id="Portfolio">
     <v-row>
       <v-col cols="12">
-        <Gallery
+        <ProjectsComponent
           v-for="project in projects"
           :key="project.id"
           :project="project"
@@ -16,12 +16,12 @@
 <script>
 import gsap from 'gsap'
 import ProjectsData from '@/assets/data/projects/projects.json'
-// import ProjectsComponent from '@/components/projects/Projects.vue'
-import Gallery from '@/components/SimpleGallery.vue'
+import ProjectsComponent from '@/components/projects/Projects.vue'
+// import Gallery from '@/components/SimpleGallery.vue'
 export default {
   name: 'Portfolio',
   components: {
-    Gallery,
+    ProjectsComponent,
   },
 
   data() {
