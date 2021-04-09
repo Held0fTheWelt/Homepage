@@ -1,74 +1,78 @@
 <template>
   <v-container class="projectDetails mx-auto" v-if="project">
     <div v-if="$vuetify.breakpoint.smAndDown">
-      <v-row>
-        <v-col cols="12">
-          <Gallery
-            :count="4"
-            :videos="[4]"
-            :url="[
-              getImageURL(1),
-              getImageURL(2),
-              getImageURL(3),
-              getVideoURL(),
-            ]"
-          />
-        </v-col>
-      </v-row>
-      <v-row class="alignCenter">
-        <v-col
-          ><h1>{{ project.title }}</h1>
-        </v-col>
-      </v-row>
-      <v-row class="alignCenter">
-        <v-col>@ {{ project.location }} on {{ project.date }} </v-col>
-      </v-row>
-      <v-row>
-        <v-col>
-          {{ project.description }}
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col>
-          {{ project.shortStory }}
-        </v-col>
-      </v-row>
+      <v-card>
+        <v-row>
+          <v-col cols="12">
+            <Gallery
+              :count="4"
+              :videos="[4]"
+              :url="[
+                getImageURL(1),
+                getImageURL(2),
+                getImageURL(3),
+                getVideoURL(),
+              ]"
+            />
+          </v-col>
+        </v-row>
+        <v-row class="alignCenter">
+          <v-col
+            ><h1>{{ project.title }}</h1>
+          </v-col>
+        </v-row>
+        <v-row class="alignCenter">
+          <v-col>@ {{ project.location }} on {{ project.date }} </v-col>
+        </v-row>
+        <v-row>
+          <v-col>
+            {{ project.description }}
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col>
+            {{ project.shortStory }}
+          </v-col>
+        </v-row>
+      </v-card>
     </div>
     <div v-if="$vuetify.breakpoint.mdAndUp">
-      <v-row>
-        <v-col cols="7">
-          <Gallery
-            :count="4"
-            :videos="[4]"
-            :url="[
-              getImageURL(1),
-              getImageURL(2),
-              getImageURL(3),
-              getVideoURL(),
-            ]"
-          />
-        </v-col>
-        <v-col cols="5">
-          <v-row class="alignCenter">
-            <v-col
-              ><h1>{{ project.title }}</h1>
-            </v-col>
-          </v-row>
-          <v-row class="alignCenter">
-            <v-col>@ {{ project.location }} on {{ project.date }} </v-col>
-          </v-row>
-          <v-row>
-            <v-col>
-              {{ project.description }}
-            </v-col>
-          </v-row>
-          <v-row>
-            <v-col>
-              {{ project.shortStory }}
-            </v-col>
-          </v-row>
-        </v-col>
-      </v-row>
+      <v-card class="projectTop">
+        <v-row>
+          <v-col cols="7">
+            <Gallery
+              :count="4"
+              :videos="[4]"
+              :url="[
+                getImageURL(1),
+                getImageURL(2),
+                getImageURL(3),
+                getVideoURL(),
+              ]"
+            />
+          </v-col>
+          <v-col cols="5">
+            <v-row class="alignCenter">
+              <v-col
+                ><h1>{{ project.title }}</h1>
+              </v-col>
+            </v-row>
+            <v-row class="alignCenter">
+              <v-col>@ {{ project.location }} on {{ project.date }} </v-col>
+            </v-row>
+            <v-row>
+              <v-col>
+                {{ project.description }}
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-col>
+                {{ project.shortStory }}
+              </v-col>
+            </v-row>
+          </v-col>
+        </v-row>
+      </v-card>
     </div>
     <v-row>
       <v-col cols="4"> </v-col>
@@ -134,7 +138,10 @@ export default {
 .alignCenter {
   text-align: center;
 }
-
+.projectTop {
+  padding: 2%;
+  margin-bottom: 1%;
+}
 video {
   object-fit: contain;
   width: 100%;
