@@ -75,8 +75,8 @@
       </v-card>
     </div>
     <v-row>
-      <v-col cols="4"> </v-col>
-      <v-col cols="4"> </v-col>
+      <v-col cols="4"> <Specs /></v-col>
+      <v-col cols="4"> <Log/></v-col>
       <v-col cols="4"> <Download /></v-col>
     </v-row>
     <v-row>
@@ -95,6 +95,8 @@
 
 import EventService from '@/services/EventService.js'
 import Download from '@/components/projects/Download.vue'
+import Log from '@/components/projects/Log.vue'
+import Specs from '@/components/projects/Specs.vue'
 // import Client from '@/components/projects/WebClient.vue'
 import Gallery from '@/components/SimpleGallery.vue'
 export default {
@@ -107,6 +109,8 @@ export default {
   components: {
     // Client,
     Gallery,
+    Log,
+    Specs,
     Download,
   },
   methods: {
