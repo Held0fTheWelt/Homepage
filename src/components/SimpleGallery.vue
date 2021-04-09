@@ -3,76 +3,18 @@
     <v-row><v-col class="12">Test</v-col></v-row>
     <v-row cols="12" class="hoverData">
       <v-col>
-        <v-img v-bind:src="image" alt="Project Image" />
+        <v-img v-bind:src="image()" alt="Project Image" />
       </v-col>
     </v-row>
-    <v-row cols="12" class="hoverData {'pad-xs' : $vuetify.breakpoint.xs}">
-      <v-col class="gal_left" cols="1">
-        <v-img
-          v-on:click="click(true)"
-          class="gal_but_left"
-          v-bind:src="clickLeft"
-          alt="Click Left Button"
-        />
-      </v-col>
-      <v-col class="gal_center">
-        <v-row >
-          <v-col><v-spacer /></v-col>
-          <v-col cols="1">
-            <v-img
-              class="gal_but_select"
-              v-bind:src="selection"
-              v-on:click="select(1)"
-              alt="Click First Image"
-            >
-              <v-img
-                v-if="currentID == 1"
-                class="gal_but_selected"
-                v-bind:src="selected"
-                alt="First Image selected"
-              />
-            </v-img>
-          </v-col>
-          <v-col cols="1">
-            <v-img
-              class="gal_but_select"
-              v-bind:src="selection"
-              v-on:click="select(2)"
-              alt="Click First Image"
-            >
-              <v-img
-                v-if="currentID == 2"
-                class="gal_but_selected"
-                v-bind:src="selected"
-                alt="First Image selected"
-              />
-            </v-img>
-          </v-col>
-          <v-col cols="1">
-            <v-img
-              class="gal_but_select"
-              v-bind:src="selection"
-              v-on:click="select(3)"
-              alt="Click First Image"
-            >
-              <v-img
-                v-if="currentID == 3"
-                class="gal_but_selected"
-                v-bind:src="selected"
-                alt="First Image selected"
-              />
-            </v-img>
-          </v-col>
-          <v-col><v-spacer /></v-col>
-        </v-row>
-      </v-col>
-      <v-col class="gal_right" cols="1">
-        <v-img
-          v-on:click="click(false)"
-          class="gal_but_right"
-          v-bind:src="clickRight"
-          alt="Click Right Button"
-        />
+    <v-row class="hoverData {'pad-xs' : $vuetify.breakpoint.xs}">
+      <v-col cols="12" class="gal_center">
+        <v-pagination
+          v-model="currentID"
+          :length="3"
+          circle
+          prev-icon="mdi-menu-left"
+          next-icon="mdi-menu-right"
+        ></v-pagination>
       </v-col>
     </v-row>
   </v-card>
@@ -84,27 +26,31 @@
 export default {
   name: 'SimpleGallery',
   methods: {
-    click: function (left) {
-      if (left === true) {
-        if (this.currentID > 1) {
-          this.currentID--
-        }
-      } else {
-        if (this.currentID < 3) {
-          this.currentID++
-        }
-      }
+    // click: function (left) {
+    //   if (left === true) {
+    //     if (this.currentID > 1) {
+    //       this.currentID--
+    //     }
+    //   } else {
+    //     if (this.currentID < 3) {
+    //       this.currentID++
+    //     }
+    //   }
+    // },
+    // select: function (id) {
+    //   this.currentID = id
+    //   global.vm.$forceUpdate()
+    // },
+    image: function () {
+      console.log(this.currentID)
+      return require('@/assets/images/projects/' +
+        this.project.id +
+        '/screenshots/' +
+        this.currentID +
+        '.png')
     },
-    select: function (id) {
-        this.currentID = id;
-        global.vm.$forceUpdate();
-      }
-    
   },
   props: {
-    id: {
-      type: Number,
-    },
     project: {
       type: Object,
       required: true,
@@ -112,19 +58,20 @@ export default {
   },
   data() {
     return {
-      image: require('@/assets/images/projects/' +
-        this.project.id +
-        '/image_big_logo.png'),
+      currentID: 1,
       clickLeft: require('@/assets/images/util/arrow_left.png'),
       clickRight: require('@/assets/images/util/arrow_right.png'),
       selection: require('@/assets/images/util/dot.png'),
       selected: require('@/assets/images/util/dotselected.png'),
-      currentID: 0,
+      // image: require('@/assets/images/projects/' +
+      //   this.project.id +
+      //   '/screenshots/' +
+      //   this.currentID +
+      //   '.png'),
     }
   },
   created() {
-    this.id = 1
-    this.currentID = this.id
+    this.currentID = 1
   },
 }
 </script>
