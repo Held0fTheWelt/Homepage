@@ -69,7 +69,11 @@
         </v-col>
       </v-row>
     </div>
-
+    <v-row>
+      <v-col cols="12">
+        <Gallery :project="project" count="5"/>
+      </v-col>
+    </v-row>
     <v-row>
       <v-col cols="12">
         <Client/>
@@ -81,11 +85,12 @@
 <script>
 import EventService from '@/services/EventService.js'
 import Client from '@/components/projects/WebClient.vue'
-
+import Gallery from '@/components/SimpleGallery.vue'
 export default {
   props: ['id'],
   components: {
     Client,
+    Gallery,
   },
   data() {
     return {
