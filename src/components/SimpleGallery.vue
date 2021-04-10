@@ -9,7 +9,7 @@
           rel="preload"
         />
         <video v-else autoplay controls preload>
-          <source v-bind:src="video" type="video/mp4" rel="preload" />
+          <source v-bind:src="video" type="video/mp4"/>
           <!-- <source src="../assets/Logo.ogg" type="video/ogg"> -->
           Ihr Browser kann dieses Video nicht wiedergeben.<br />
           Dieser Film zeigt einen Trailer zum Projekt.
@@ -68,7 +68,6 @@ export default {
   data() {
     return {
       currentID: 1,
-
       clickLeft: require('@/assets/images/util/arrow_left.png'),
       clickRight: require('@/assets/images/util/arrow_right.png'),
       selection: require('@/assets/images/util/dot.png'),
