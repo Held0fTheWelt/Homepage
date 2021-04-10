@@ -22,19 +22,17 @@
 </template>
 
 <script>
-
 export default {
   props: {
     project: {
       type: Object,
       require: true,
     },
-  }
+  },
 }
 </script>
 
 <style scoped>
-
 h1 {
   text-align: center;
   width: 100%;
