@@ -120,7 +120,7 @@ export default {
       )
     },
     getVideoURL: function () {
-      return 'projects/' + (this.id + 1) + '/Trailer.mp4'
+      return '@/assets/videos/projects/' + (this.id + 1) + '/Trailer.mp4'
     },
   },
   data() {
