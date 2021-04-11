@@ -116,10 +116,10 @@ export default {
   },
   methods: {
     getImageURL: function (currentShot) {
-      return `${this.id+1}/screenshots/` + currentShot + '.jpg'
+      return `${this.id + 1}/screenshots/` + currentShot + '.jpg'
     },
     getVideoURL: function () {
-      return `${this.id+1}/Trailer.mp4`
+      return `${this.id + 1}/Trailer.mp4`
     },
   },
   data() {
