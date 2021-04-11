@@ -44,8 +44,8 @@ export default {
     getVideo() {
       this.video = require('@/assets/videos/projects/' +
         this.projectID +
-        '/Trailer.mp4');
-        return true;
+        '/Trailer.mp4')
+      return true
     },
     isImage: function () {
       for (let i = 0; i < this.videos.length; i++) {
