@@ -118,7 +118,7 @@ export default {
       return 'projects/' + (this.id + 1) + '/screenshots/' + currentShot + '.jpg'
     },
     getVideoURL: function () {
-      return this.id + 1 + '/Trailer.mp4'
+      return 'projects/' + (this.id + 1) + '/Trailer.mp4'
     },
   },
   data() {
