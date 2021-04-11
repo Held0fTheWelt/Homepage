@@ -35,11 +35,11 @@ export default {
   name: 'SimpleGallery',
   computed: {
     image() {
-      return require('@/assets/images/' + this.url[this.currentID - 1])
+      return require('@/assets/images/projects/' + this.url[this.currentID - 1])
     },
     video() {
-      return require('@/assets/videos/' + this.url[this.currentID - 1])
-      
+      return require('@/assets/videos/projects/' + this.url[this.currentID - 1])
+
     },
   },
   methods: {

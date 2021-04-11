@@ -115,10 +115,10 @@ export default {
   },
   methods: {
     getImageURL: function (currentShot) {
-      return 'projects/' + (this.id + 1) + '/screenshots/' + currentShot + '.jpg'
+      return `${this.id+1}/screenshots/` + currentShot + '.jpg'
     },
     getVideoURL: function () {
-      return 'projects/' + (this.id + 1) + '/Trailer.mp4'
+      return `${this.id+1}/Trailer.mp4`
     },
   },
   data() {
