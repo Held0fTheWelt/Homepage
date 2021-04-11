@@ -1,11 +1,11 @@
 <template>
-  <v-card v-if="project">
+  <v-card v-if="project" class="specs">
     <v-card-title>
       <h1>Specifications</h1>
     </v-card-title>
     <v-card-text>
       <v-row>
-        <v-col cols="12" class="specs">
+        <v-col cols="12" class="specsData">
           <h3>Minimum Specifications:</h3>
           <br />
           <!-- Operating Sytem: {{ project.specs.requirements[0].system }}<br /> -->
@@ -39,6 +39,9 @@ h1 {
   margin-bottom: 4%;
 }
 .specs {
+  height: 100%;
+}
+.specsData {
   padding-left: 5%;
 }
 </style>
