@@ -42,7 +42,7 @@ export default {
   },
   methods: {
     getVideo() {
-      this.video = require('@/assets/videos/projects/1/Trailer.mp4')// +
+      //this.video = require('@/assets/videos/projects/1/Trailer.mp4') +
         //this.projectID +
         //'1/Trailer.mp4')
       return true
