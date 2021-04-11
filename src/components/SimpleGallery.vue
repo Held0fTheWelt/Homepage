@@ -4,12 +4,12 @@
       <v-col>
         <v-img
           v-if="isImage()"
-          v-bind:src="image()"
+          v-bind:src="image"
           alt="Project Image"
           rel="preload"
         />
         <video v-else autoplay controls preload>
-          <source v-bind:src="video()" type="video/mp4" />
+          <source v-bind:src="video" type="video/mp4" />
           <!-- <source src="../assets/Logo.ogg" type="video/ogg"> -->
           Ihr Browser kann dieses Video nicht wiedergeben.<br />
           Dieser Film zeigt einen Trailer zum Projekt.
@@ -33,15 +33,17 @@
 <script>
 export default {
   name: 'SimpleGallery',
-  methods: {
-    image() {
-      return require('@/assets/images/projects/' + this.url[this.currentID - 1])
-    },
-    video() {
-      return require('../assets/videos/projects/' +this.projectID + '/Trailer.mp4')
+  computed: {
+      image() {
+        return require('@/assets/images/projects/' + this.url[this.currentID - 1])
+      },
+      video() {
+        return require('@/assets/videos/projects/' +this.projectID + '/Trailer.mp4')
 
-    },
-    isImage: function () {
+      },
+  },
+    methods: {
+      isImage: function () {
       for (let i = 0; i < this.videos.length; i++) {
         if (this.currentID == this.videos[i]) {
           return false
