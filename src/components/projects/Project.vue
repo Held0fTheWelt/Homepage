@@ -116,12 +116,12 @@ export default {
   methods: {
     getImageURL: function (currentShot) {
       return (
-        '@/assets/images/projects/' + (this.id + 1) + '/screenshots/' + currentShot + '.jpg'
+        (this.id + 1) + '/screenshots/' + currentShot + '.jpg'
       )
     },
     getVideoURL: function () {
       return (
-        'projects/' + (this.id + 1) + '/Trailer.mp4'
+        (this.id + 1) + '/Trailer.mp4'
       )
     },
   },
