@@ -47,7 +47,7 @@
                 getImageURL(1),
                 getImageURL(2),
                 getImageURL(3),
-                getVideoURL(),
+                project.id,
               ]"
               :projectID="project.id"
             />
