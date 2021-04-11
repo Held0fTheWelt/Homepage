@@ -42,9 +42,6 @@ export default {
   },
   methods: {
     getVideo() {
-      //this.video = require('@/assets/videos/projects/1/Trailer.mp4') +
-        //this.projectID +
-        //'1/Trailer.mp4')
       return true
     },
     isImage: function () {
@@ -86,6 +83,7 @@ export default {
   },
   created() {
     this.currentID = 1
+    this.video = require('@/assets/videos/projects/' + this.projectID +'/Trailer.mp4')
   },
 }
 //  @/assets/videos/projects in ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/SimpleGallery.vue?vue&type=script&lang=js&
