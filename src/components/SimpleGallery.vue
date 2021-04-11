@@ -39,6 +39,7 @@ export default {
     },
     video() {
       return require('@/assets/videos/' + this.url[this.currentID - 1])
+      
     },
   },
   methods: {
