@@ -9,7 +9,7 @@
           rel="preload"
         />
         <video v-else autoplay controls preload>
-          <source v-bind:src="video" type="video/mp4"/>
+          <source v-bind:src="video" type="video/mp4" />
           <!-- <source src="../assets/Logo.ogg" type="video/ogg"> -->
           Ihr Browser kann dieses Video nicht wiedergeben.<br />
           Dieser Film zeigt einen Trailer zum Projekt.
@@ -35,10 +35,10 @@ export default {
   name: 'SimpleGallery',
   computed: {
     image() {
-      return require('@/assets/images/projects/'+this.url[this.currentID - 1]);
+        return require('@/assets/images/'+this.url[this.currentID - 1]);
     },
-    video() {      
-      return require('@/assets/videos/projects/'+this.url[this.currentID - 1]);
+    video() {
+      return require('@/assets/videos/projects/' + this.url[this.currentID - 1])
     },
   },
   methods: {

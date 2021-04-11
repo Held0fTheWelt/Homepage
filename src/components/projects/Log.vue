@@ -11,8 +11,8 @@ export default {}
 </script>
 
 <style scoped>
-.log{
-  height:100%;
+.log {
+  height: 100%;
 }
 
 h1 {

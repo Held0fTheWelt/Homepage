@@ -17,6 +17,13 @@
           <pre>Equipment:</pre>
         </v-col>
       </v-row>
+      <v-row>
+        <v-col cols="12" class="specsData">
+          <!-- Operating Sytem: {{ project.specs.requirements[0].system }}<br /> -->
+          <pre>Current Engine: &#09;&#09;{{ project.specs.engine }}<br /></pre>
+          <pre>Programming Language: &#09;{{ project.specs.language }}<br /></pre>
+        </v-col>
+      </v-row>
     </v-card-text>
   </v-card>
 </template>
