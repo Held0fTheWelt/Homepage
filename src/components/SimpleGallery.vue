@@ -8,14 +8,12 @@
           alt="Project Image"
           rel="preload"
         />
-        <div v-else>
-          <video v-if="getVideo()" autoplay controls preload>
-            <source v-bind:src="video" type="video/mp4" />
-            <!-- <source src="../assets/Logo.ogg" type="video/ogg"> -->
-            Ihr Browser kann dieses Video nicht wiedergeben.<br />
-            Dieser Film zeigt einen Trailer zum Projekt.
-          </video>
-        </div>
+        <video v-else autoplay controls preload>
+          <source v-bind:src="video" type="video/mp4" />
+          <!-- <source src="../assets/Logo.ogg" type="video/ogg"> -->
+          Ihr Browser kann dieses Video nicht wiedergeben.<br />
+          Dieser Film zeigt einen Trailer zum Projekt.
+        </video>
       </v-col>
     </v-row>
     <v-row class="hoverData {'pad-xs' : $vuetify.breakpoint.xs}">
@@ -41,9 +39,6 @@ export default {
     },
   },
   methods: {
-    getVideo() {
-      return true
-    },
     isImage: function () {
       for (let i = 0; i < this.videos.length; i++) {
         if (this.currentID == this.videos[i]) {
@@ -78,12 +73,13 @@ export default {
       clickRight: require('@/assets/images/util/arrow_right.png'),
       selection: require('@/assets/images/util/dot.png'),
       selected: require('@/assets/images/util/dotselected.png'),
-      video: null,
+      video: require('@/assets/videos/projects/' +
+        this.projectID +
+        '/Trailer.mp4'),
     }
   },
   created() {
     this.currentID = 1
-    this.video = require('@/assets/videos/projects/' + this.projectID +'/Trailer.mp4')
   },
 }
 //  @/assets/videos/projects in ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/SimpleGallery.vue?vue&type=script&lang=js&
@@ -97,7 +93,6 @@ export default {
 .gal_but_right {
   float: right;
 }
-
 
 .gal_center {
   text-align: center;
