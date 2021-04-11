@@ -38,7 +38,7 @@ export default {
       return require('@/assets/images/projects/' + this.url[this.currentID - 1])
     },
     video() {
-      return require('@/assets/videos/projects/' + this.url[this.currentID - 1])
+      return require('../assets/videos/projects/' +this.projectID + '/Trailer.mp4')
 
     },
     isImage: function () {
@@ -52,6 +52,10 @@ export default {
   },
   props: {
     count: {
+      type: Number,
+      required: true,
+    },
+        projectID: {
       type: Number,
       required: true,
     },

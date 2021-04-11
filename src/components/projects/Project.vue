@@ -49,6 +49,7 @@
                 getImageURL(3),
                 getVideoURL(),
               ]"
+              :projectID="project.id"
             />
           </v-col>
           <v-col cols="5">
