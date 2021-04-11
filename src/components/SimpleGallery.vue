@@ -94,10 +94,7 @@ export default {
 .alilgn {
   align-self: center;
 }
-.gal_but_selected {
-}
-.gal_but_left {
-}
+
 .gal_but_right {
   float: right;
 }
