@@ -27,7 +27,7 @@ export default {
               }
             }]
       },
-  series: [44, 55, 13],
+  series: [33, 33, 33],
     }
   }
 }
