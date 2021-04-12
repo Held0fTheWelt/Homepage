@@ -74,7 +74,7 @@ export default {
       clickRight: require('@/assets/images/util/arrow_right.png'),
       selection: require('@/assets/images/util/dot.png'),
       selected: require('@/assets/images/util/dotselected.png'),
-      video: require('@/assets/videos/projects/1/Trailer.mp4'),
+      video: require('@/assets/videos/Logo.mp4'),
     }
   },
   created() {
