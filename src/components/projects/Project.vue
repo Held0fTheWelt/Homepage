@@ -115,10 +115,10 @@ export default {
   },
   methods: {
     getImageURL: function (currentShot) {
-      return `${this.id + 1}/screenshots/` + currentShot + '.jpg'
+      return `${this.id}/screenshots/` + currentShot + '.jpg'
     },
     getVideoURL: function () {
-      return `${this.id + 1}/Trailer.mp4`
+      return `${this.id}/Trailer.mp4`
     },
   },
   data() {
@@ -129,8 +129,7 @@ export default {
   },
   created() {
     let result = this.id - 1
-    this.id = result
-    this.project = EventService.getProject(this.id)
+    this.project = EventService.getProject(result)
   },
 }
 //<!-- Add "scoped" attribute to limit CSS to this component only <style scoped></style>-->
