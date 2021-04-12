@@ -1,19 +1,19 @@
 <template>
   <v-container v-if="url">
     <v-row cols="12" class="hoverData">
-      <v-col>
+      <v-col v-if="getVideo()">
         <v-img
           v-if="isImage()"
           v-bind:src="image"
           alt="Project Image"
           rel="preload"
-        />
-        <video v-else autoplay controls preload>
-          <source v-bind:src="video" type="video/mp4" />
+        /><div v-else>
+        <video autoplay controls preload>
+          <source :src="video" type="video/mp4" />
           <!-- <source src="../assets/Logo.ogg" type="video/ogg"> -->
           Ihr Browser kann dieses Video nicht wiedergeben.<br />
           Dieser Film zeigt einen Trailer zum Projekt.
-        </video>
+        </video></div>
       </v-col>
     </v-row>
     <v-row class="hoverData {'pad-xs' : $vuetify.breakpoint.xs}">
@@ -36,7 +36,7 @@ export default {
   computed: {
     image() {
       return require('@/assets/images/projects/' + this.url[this.currentID - 1])
-    },
+    }
   },
   methods: {
     isImage: function () {
@@ -47,23 +47,28 @@ export default {
       }
       return true
     },
+    getVideo: function() {
+      console.log("@/assets/videos/projects/" + this.url[this.currentID - 1] + "/Trailer.mp4")
+      this.video = require("@/assets/videos/projects/" + this.currentID + "/Trailer.mp4")
+      return true
+    }
   },
   props: {
     count: {
       type: Number,
-      required: true,
+      required: true
     },
     projectID: {
       type: Number,
-      required: true,
+      required: true
     },
     videos: {
       type: Array,
-      required: true,
+      required: true
     },
     url: {
       type: Array,
-      required: true,
+      required: true
     },
   },
   data() {
@@ -73,9 +78,7 @@ export default {
       clickRight: require('@/assets/images/util/arrow_right.png'),
       selection: require('@/assets/images/util/dot.png'),
       selected: require('@/assets/images/util/dotselected.png'),
-      video: require('@/assets/videos/projects/' +
-        this.projectID +
-        '/Trailer.mp4'),
+      video: require('@/assets/videos/Logo.mp4'),
     }
   },
   created() {
