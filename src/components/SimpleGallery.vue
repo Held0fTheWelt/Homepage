@@ -39,9 +39,9 @@ export default {
     image() {
       return require('@/assets/images/projects/' + this.url[this.currentID - 1])
     },
-    video() {
-      return require('@/assets/videos/projects/1/Trailer.mp4')// + this.url[this.currentID - 1])
-    },
+    // video() {
+    //   return require('@/assets/videos/projects/1/Trailer.mp4')// + this.url[this.currentID - 1])
+    // },
   },
   methods: {
     isImage: function () {
@@ -74,6 +74,7 @@ export default {
       clickRight: require('@/assets/images/util/arrow_right.png'),
       selection: require('@/assets/images/util/dot.png'),
       selected: require('@/assets/images/util/dotselected.png'),
+      video: require('@/assets/videos/projects/1/Trailer.mp4'),
     }
   },
   created() {
