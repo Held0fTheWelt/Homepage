@@ -1,7 +1,7 @@
 <template>
   <v-container v-if="url">
     <v-row cols="12" class="hoverData">
-      <v-col v-if="getVideo()">
+      <v-col>
         <v-img
           v-if="isImage()"
           v-bind:src="image"
@@ -36,6 +36,9 @@ export default {
   computed: {
     image() {
       return require('@/assets/images/projects/' + this.url[this.currentID - 1])
+    },
+    video() {
+      return require('@/assets/videos/projects/' + this.projectID + '/Trailer.mp4')
     }
   },
   methods: {
@@ -47,11 +50,6 @@ export default {
       }
       return true
     },
-    getVideo: function() {
-      console.log("@/assets/videos/projects/" + this.url[this.currentID - 1] + "/Trailer.mp4")
-      this.video = require("@/assets/videos/projects/" + this.currentID + "/Trailer.mp4")
-      return true
-    }
   },
   props: {
     count: {
@@ -78,7 +76,6 @@ export default {
       clickRight: require('@/assets/images/util/arrow_right.png'),
       selection: require('@/assets/images/util/dot.png'),
       selected: require('@/assets/images/util/dotselected.png'),
-      video: require('@/assets/videos/Logo.mp4'),
     }
   },
   created() {
