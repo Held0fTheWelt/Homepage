@@ -7,13 +7,15 @@
           v-bind:src="image"
           alt="Project Image"
           rel="preload"
-        /><div v-else>
-        <video  v-if="video" autoplay controls preload>
-          <source v-bind:src="video" type="video/mp4" />
-          <!-- <source src="../assets/Logo.ogg" type="video/ogg"> -->
-          Ihr Browser kann dieses Video nicht wiedergeben.<br />
-          Dieser Film zeigt einen Trailer zum Projekt.
-        </video></div>
+        />
+        <div v-else>
+          <video v-if="video" autoplay controls preload>
+            <source v-bind:src="video" type="video/mp4" />
+            <!-- <source src="../assets/Logo.ogg" type="video/ogg"> -->
+            Ihr Browser kann dieses Video nicht wiedergeben.<br />
+            Dieser Film zeigt einen Trailer zum Projekt.
+          </video>
+        </div>
       </v-col>
     </v-row>
     <v-row class="hoverData {'pad-xs' : $vuetify.breakpoint.xs}">
@@ -39,7 +41,7 @@ export default {
     },
     video() {
       return require('@/assets/videos/projects/' + this.url[this.currentID - 1])
-    }
+    },
   },
   methods: {
     isImage: function () {
@@ -54,15 +56,15 @@ export default {
   props: {
     count: {
       type: Number,
-      required: true
+      required: true,
     },
     videos: {
       type: Array,
-      required: true
+      required: true,
     },
     url: {
       type: Array,
-      required: true
+      required: true,
     },
   },
   data() {
