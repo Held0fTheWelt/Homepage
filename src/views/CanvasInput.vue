@@ -1,38 +1,26 @@
 <template>
-  <div class="mx-auto">
-  <v-stage :config="configKonva">
-    <v-layer>
-      <v-circle :config="configCircle"></v-circle>
-    </v-layer>
-  </v-stage>
-    </div>
+  <div>
+    <CanvasInput :width="width" :height="height"></CanvasInput>
+  </div>
 </template>
 
 <script>
+import CanvasInput from '@/components/CanvasInputComponent.vue'
 export default {
+  components: {
+    CanvasInput,
+  },
   data() {
     return {
-      configKonva: {
-        width: 2000,
-        height: 1200
-      },
-      configCircle: {
-        x: 500,
-        y: 500,
-        radius: 250,
-        fill: "red",
-        stroke: "black",
-        strokeWidth: 4
-      }
-    };
-  }
+      width: window.innerWidth,
+      height: window.innerHeight
+    }
+  },
+  created() {
+    console.log('Outer' + window.innerWidth)
+    console.log('Outer' + window.innerHeight)
+  },
 }
 </script>
 
-<style scoped>
-.canvasInput
-{
-    width: 100%;
-    height: 100%;
-}
-</style>
+<style scoped></style>
