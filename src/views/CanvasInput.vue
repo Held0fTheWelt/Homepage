@@ -1,6 +1,6 @@
 <template>
   <div>
-    <CanvasInput :width="width" :height="height"></CanvasInput>
+    <CanvasInput :width="width" :height="height" :enabled=true></CanvasInput>
   </div>
 </template>
 

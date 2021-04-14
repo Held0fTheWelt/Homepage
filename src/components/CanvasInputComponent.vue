@@ -1,11 +1,13 @@
 <template>
-  <div v-if="height" class="mx-auto">
-    <v-stage
+  <div v-if="isEnabled" class="mx-auto">
+    <v-stage  v-if="height"
       :config="configKonva"
       @mousedown="mousePressed($event)"
       @mouseup="mouseReleased()"
       @mousemove="mouseMoved($event)"
       @wheel="mouseWheel($event)"
+      v-touch:start="mousePressed($event)" v-touch:end="endHandler($event)"
+      v-touch:moving="movingHandler($event)"
     >
       <v-layer>
         <v-circle v-if="isShowingCircle()" :config="configCircle"></v-circle>
@@ -17,6 +19,10 @@
 <script>
 export default {
   props: {
+    enabled: {
+      type: Boolean,
+      required: true,
+    },
     width: {
       type: Number,
       required: true,
@@ -84,6 +90,7 @@ export default {
         showCircle: false,
       },
       mouseIsPressed: false,
+      isEnabled: this.enabled,
     }
   },
   created() {
