@@ -17,8 +17,8 @@ export default {
     }
   },
   created() {
-    console.log('Outer' + window.innerWidth)
-    console.log('Outer' + window.innerHeight)
+    console.log('Outer Window' + window.innerWidth)
+    console.log('Outer Window' + window.innerHeight)
   },
 }
 </script>
