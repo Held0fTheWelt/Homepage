@@ -1,27 +1,25 @@
 <template>
   <v-app id="vApp">
-    <!-- <Navbar /> -->
-    <!-- <v-main> -->
+    <Navbar />
     <v-main id="content">
       <transition name="slide-fade" mode="out-in">
         <router-view></router-view>
       </transition>
     </v-main>
-    <!-- </v-main> -->
-    <!-- <Footer /> -->
+    <Footer />
   </v-app>
 </template>
 
 <script>
-// import Navbar from '@/components/site/Navbar.vue'
-// import Footer from '@/components/site/Footer.vue'
+import Navbar from '@/components/site/Navbar.vue'
+import Footer from '@/components/site/Footer.vue'
 
 export default {
   name: 'App',
 
   components: {
-    // Navbar,
-    // Footer,
+    Navbar,
+    Footer,
   },
 
   data: () => ({
