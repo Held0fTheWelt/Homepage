@@ -6,6 +6,8 @@
       @mousedown="mousePressed($event)"
       @mouseup="mouseReleased()"
       @mousemove="mouseMoved($event)"
+      @mouseenter="mouseEntered()"
+      @mouseleave="mouseLeft()"
       @wheel="mouseWheel($event)"
       :v-touch:start="touchStart('Start')"
       :v-touch:end="touchRelease()"
@@ -35,6 +37,15 @@ export default {
     },
   },
   methods: {
+    mouseEntered: function () {
+      if(this.mouseIsPressed === true)
+      {
+        this.configCircle.showCircle = true
+      }
+    },
+    mouseLeft: function () {
+        this.configCircle.showCircle = false
+    },
     touchStart: function (event) {
         console.log(event)
     },
