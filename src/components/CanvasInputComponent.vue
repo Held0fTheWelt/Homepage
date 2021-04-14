@@ -50,12 +50,15 @@ export default {
     }
   },
   created() {
+      console.log('Transport Parameter' + this.configKonva.width)
+    console.log('Transport Parameter' + this.configKonva.height)
+    console.log('Inner Value Default' + this.width)
+    console.log('Inner Value Default' + this.height)
     this.configKonva.width = this.width
     this.configKonva.height = this.height
-    console.log('Inner' + this.configKonva.width)
-    console.log('Inner' + this.configKonva.height)
-    console.log('Inner' + this.width)
-    console.log('Inner' + this.height)
+    console.log('Inner Value with Parameter' + this.width)
+    console.log('Inner Value with Parameter' + this.height)
+
   },
 }
 </script>
