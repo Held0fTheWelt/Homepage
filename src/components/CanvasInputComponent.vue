@@ -63,22 +63,22 @@ export default {
       if (this.mouseIsPressed === true) {
         this.configCircle.x = event.evt.layerX
         this.configCircle.y = event.evt.layerY
-        // console.log(
-        //   'Mouse Position X ' +
-        //     this.configCircle.x +
-        //     ' Mouse Position Y ' +
-        //     this.configCircle.y
-        // )
-        // console.log(
-        //   'Mouse Position X% ' +
-        //     this.configCircle.x / this.configKonva.width +
-        //     ' Mouse Position Y% ' +
-        //     this.configCircle.y / this.configKonva.height
-        // )
+        console.log(
+          'Mouse Position X ' +
+            this.configCircle.x +
+            ' Mouse Position Y ' +
+            this.configCircle.y
+        )
+        console.log(
+          'Mouse Position X% ' +
+            this.configCircle.x / this.configKonva.width +
+            ' Mouse Position Y% ' +
+            this.configCircle.y / this.configKonva.height
+        )
       }
     },
     mousePressed: function (event) {
-      console.log(event.evt.button)
+      // 0 = Left Mouse Button , 1 = Middle, 2 = Right
       if (event.evt.button === 0) {
         this.configCircle.x = event.evt.layerX
         this.configCircle.y = event.evt.layerY
