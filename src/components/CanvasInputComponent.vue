@@ -1,6 +1,11 @@
 <template>
   <div v-if="height" class="mx-auto">
-    <v-stage :config="configKonva" @mousedown="mousePressed($event)">
+    <v-stage
+      :config="configKonva"
+      @mousedown="mousePressed($event)"
+      @mouseup="mouseReleased()"
+      @mousemove="mouseMoved($event)"
+    >
       <v-layer>
         <v-circle
           v-if="isShowingCircle()"
@@ -25,26 +30,28 @@ export default {
     },
   },
   methods: {
+    mouseMoved: function (event) {
+      if (this.mouseIsPressed === true) {
+        this.configCircle.x = event.evt.layerX
+        this.configCircle.y = event.evt.layerY
+        console.log('Mouse Position X ' + this.width)
+        console.log('Mouse Position Y ' + this.height)
+      }
+    },
     mousePressed: function (event) {
       this.configCircle.x = event.evt.layerX
       this.configCircle.y = event.evt.layerY
       console.log('Mouse Position X ' + this.width)
       console.log('Mouse Position Y ' + this.height)
       this.configCircle.showCircle = true
+      this.mouseIsPressed = true
+    },
+    mouseReleased: function () {
+      this.mouseIsPressed = false
+      this.configCircle.showCircle = false
     },
     isShowingCircle: function () {
       return this.configCircle.showCircle
-    },
-    itemRowBackground: function (item) {
-      return item.status === 'Ready'
-        ? 'style-ok'
-        : item.status === 'Open'
-        ? 'style-open'
-        : 'style-new'
-    },
-    draw: function (e) {
-      this.configCircle.x = e.clientX
-      this.configCircle.y = e.clientY
     },
   },
   data() {
@@ -62,6 +69,7 @@ export default {
         strokeWidth: 4,
         showCircle: false,
       },
+      mouseIsPressed: false,
     }
   },
   created() {
