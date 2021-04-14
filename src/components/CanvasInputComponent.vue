@@ -26,10 +26,8 @@ export default {
   },
   methods: {
     mousePressed: function (event) {
-      console.log(event.evt)
       this.configCircle.x = event.evt.layerX
       this.configCircle.y = event.evt.layerY
-
       console.log('Mouse Position X ' + this.width)
       console.log('Mouse Position Y ' + this.height)
       this.configCircle.showCircle = true
