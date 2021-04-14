@@ -6,8 +6,8 @@
       @mouseup="mouseReleased()"
       @mousemove="mouseMoved($event)"
       @wheel="mouseWheel($event)"
-      v-touch:start="mousePressed($event)" v-touch:end="endHandler($event)"
-      v-touch:moving="movingHandler($event)"
+      v-touch:start="mousePressed($event)" v-touch:end="mouseReleased()"
+      v-touch:moving="mouseWheel($event)"
     >
       <v-layer>
         <v-circle v-if="isShowingCircle()" :config="configCircle"></v-circle>
