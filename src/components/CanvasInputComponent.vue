@@ -37,8 +37,8 @@ export default {
       if (this.mouseIsPressed === true) {
         this.configCircle.x = event.evt.layerX
         this.configCircle.y = event.evt.layerY
-        // console.log('Mouse Position X ' + this.configCircle.x)
-        // console.log('Mouse Position Y ' + this.configCircle.y)
+        console.log('Mouse Position X ' + this.configCircle.x + ' Mouse Position Y ' + this.configCircle.y)
+        console.log('Mouse Position X% ' + this.configCircle.x / this.configKonva.width + ' Mouse Position Y% ' + this.configCircle.y / this.configKonva.height)
       }
     },
     mousePressed: function (event) {
