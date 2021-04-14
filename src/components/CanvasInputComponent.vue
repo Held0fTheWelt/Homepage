@@ -1,6 +1,6 @@
 <template>
   <div v-if="height" class="mx-auto">
-    <v-stage :config="configKonva" @mousedown="mousePressed">
+    <v-stage :config="configKonva" @mousedown="mousePressed($event)">
       <v-layer>
         <v-circle
           v-if="isShowingCircle()"
@@ -25,7 +25,10 @@ export default {
     },
   },
   methods: {
-    mousePressed: function () {
+    mousePressed: function (event) {
+        console.log(event.evt)
+        this.configCircle.x = event.evt.layerX
+        this.configCircle.y = event.evt.layerY
         this.configCircle.showCircle = true
     },
     isShowingCircle: function () {
