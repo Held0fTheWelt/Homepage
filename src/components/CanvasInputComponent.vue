@@ -1,8 +1,12 @@
 <template>
   <div v-if="height" class="mx-auto">
-    <v-stage :config="configKonva">
+    <v-stage :config="configKonva" @mousedown="mousePressed">
       <v-layer>
-        <v-circle @mousedown="draw" :config="configCircle"></v-circle>
+        <v-circle
+          v-if="isShowingCircle()"
+          @mousedown="draw"
+          :config="configCircle"
+        ></v-circle>
       </v-layer>
     </v-stage>
   </div>
@@ -21,6 +25,12 @@ export default {
     },
   },
   methods: {
+    mousePressed: function () {
+        this.configCircle.showCircle = true
+    },
+    isShowingCircle: function () {
+      return this.configCircle.showCircle
+    },
     itemRowBackground: function (item) {
       return item.status === 'Ready'
         ? 'style-ok'
@@ -42,10 +52,11 @@ export default {
       configCircle: {
         x: 500,
         y: 500,
-        radius: 250,
+        radius: 5,
         fill: 'red',
         stroke: 'black',
         strokeWidth: 4,
+        showCircle: false,
       },
     }
   },
