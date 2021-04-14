@@ -1,13 +1,15 @@
 <template>
   <div v-if="isEnabled" class="mx-auto">
-    <v-stage  v-if="height"
+    <v-stage
+      v-if="height"
       :config="configKonva"
       @mousedown="mousePressed($event)"
       @mouseup="mouseReleased()"
       @mousemove="mouseMoved($event)"
       @wheel="mouseWheel($event)"
-      v-touch:start="mousePressed($event)" v-touch:end="mouseReleased()"
-      v-touch:moving="mouseWheel($event)"
+      v-touch:start="touchStart('Start')"
+      v-touch:end="touchRelease()"
+      v-touch:moving="touchMove('End')"
     >
       <v-layer>
         <v-circle v-if="isShowingCircle()" :config="configCircle"></v-circle>
@@ -33,6 +35,13 @@ export default {
     },
   },
   methods: {
+    touchStart: function (event) {
+        console.log(event)
+    },
+    touchRelease: function () {},
+    touchMove: function (event) {
+        console.log(event)
+    },
     mouseWheel: function (event) {
       if (event.evt.deltaY < 0) {
         console.log('Scrolling upwards ' + event.evt.deltaY)
