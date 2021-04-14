@@ -38,20 +38,19 @@ export default {
   },
   methods: {
     mouseEntered: function () {
-      if(this.mouseIsPressed === true)
-      {
+      if (this.mouseIsPressed === true) {
         this.configCircle.showCircle = true
       }
     },
     mouseLeft: function () {
-        this.configCircle.showCircle = false
+      this.configCircle.showCircle = false
     },
     touchStart: function (event) {
-        console.log(event)
+      console.log(event)
     },
     touchRelease: function () {},
     touchMove: function (event) {
-        console.log(event)
+      console.log(event)
     },
     mouseWheel: function (event) {
       if (event.evt.deltaY < 0) {
@@ -64,27 +63,30 @@ export default {
       if (this.mouseIsPressed === true) {
         this.configCircle.x = event.evt.layerX
         this.configCircle.y = event.evt.layerY
-        console.log(
-          'Mouse Position X ' +
-            this.configCircle.x +
-            ' Mouse Position Y ' +
-            this.configCircle.y
-        )
-        console.log(
-          'Mouse Position X% ' +
-            this.configCircle.x / this.configKonva.width +
-            ' Mouse Position Y% ' +
-            this.configCircle.y / this.configKonva.height
-        )
+        // console.log(
+        //   'Mouse Position X ' +
+        //     this.configCircle.x +
+        //     ' Mouse Position Y ' +
+        //     this.configCircle.y
+        // )
+        // console.log(
+        //   'Mouse Position X% ' +
+        //     this.configCircle.x / this.configKonva.width +
+        //     ' Mouse Position Y% ' +
+        //     this.configCircle.y / this.configKonva.height
+        // )
       }
     },
     mousePressed: function (event) {
-      this.configCircle.x = event.evt.layerX
-      this.configCircle.y = event.evt.layerY
-      //   console.log('Mouse Position X ' + this.configCircle.x)
-      //   console.log('Mouse Position Y ' + this.configCircle.y)
-      this.configCircle.showCircle = true
-      this.mouseIsPressed = true
+      console.log(event.evt.button)
+      if (event.evt.button === 0) {
+        this.configCircle.x = event.evt.layerX
+        this.configCircle.y = event.evt.layerY
+        //   console.log('Mouse Position X ' + this.configCircle.x)
+        //   console.log('Mouse Position Y ' + this.configCircle.y)
+        this.configCircle.showCircle = true
+        this.mouseIsPressed = true
+      }
     },
     mouseReleased: function () {
       this.mouseIsPressed = false
