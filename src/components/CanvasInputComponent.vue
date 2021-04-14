@@ -5,13 +5,10 @@
       @mousedown="mousePressed($event)"
       @mouseup="mouseReleased()"
       @mousemove="mouseMoved($event)"
+      @wheel="mouseWheel($event)"
     >
       <v-layer>
-        <v-circle
-          v-if="isShowingCircle()"
-          @mousedown="draw"
-          :config="configCircle"
-        ></v-circle>
+        <v-circle v-if="isShowingCircle()" :config="configCircle"></v-circle>
       </v-layer>
     </v-stage>
   </div>
@@ -30,15 +27,29 @@ export default {
     },
   },
   methods: {
-    // mouseWheel: function (event) {
-    //     console.log(event)
-    // },
+    mouseWheel: function (event) {
+      if (event.evt.deltaY < 0) {
+        console.log('Scrolling upwards ' + event.evt.deltaY)
+      } else {
+        console.log('Scrolling downwards ' + event.evt.deltaY)
+      }
+    },
     mouseMoved: function (event) {
       if (this.mouseIsPressed === true) {
         this.configCircle.x = event.evt.layerX
         this.configCircle.y = event.evt.layerY
-        console.log('Mouse Position X ' + this.configCircle.x + ' Mouse Position Y ' + this.configCircle.y)
-        console.log('Mouse Position X% ' + this.configCircle.x / this.configKonva.width + ' Mouse Position Y% ' + this.configCircle.y / this.configKonva.height)
+        console.log(
+          'Mouse Position X ' +
+            this.configCircle.x +
+            ' Mouse Position Y ' +
+            this.configCircle.y
+        )
+        console.log(
+          'Mouse Position X% ' +
+            this.configCircle.x / this.configKonva.width +
+            ' Mouse Position Y% ' +
+            this.configCircle.y / this.configKonva.height
+        )
       }
     },
     mousePressed: function (event) {
