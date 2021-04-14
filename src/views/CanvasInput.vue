@@ -1,6 +1,6 @@
 <template>
   <div>
-    <CanvasInput :width="width" :height="height" :enabled=true></CanvasInput>
+    <CanvasInput :width="width" :height="height" :enabled="true"></CanvasInput>
   </div>
 </template>
 
@@ -11,7 +11,7 @@ export default {
     CanvasInput,
   },
   data() {
-    return {  
+    return {
       width: window.innerWidth,
       height: window.innerHeight,
     }
