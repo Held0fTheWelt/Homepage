@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'
+import VueKonva from 'vue-konva'
 import vueApexCharts from 'vue-apexcharts'
 Vue.config.productionTip = false
 
@@ -14,5 +15,5 @@ new Vue({
 }).$mount('#app')
 
 Vue.use(vueApexCharts)
-
+Vue.use(VueKonva)
 Vue.component('apexchart', vueApexCharts)

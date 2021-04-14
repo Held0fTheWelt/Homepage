@@ -1,38 +1,37 @@
 <template>
   <div>
-  <apexchart width="500"  :options="options" :series="series"></apexchart>
+    <apexchart width="500" :options="options" :series="series"></apexchart>
   </div>
 </template>
 
 <script>
 // <ApexCharts/>
 export default {
-  data: function() {
+  data: function () {
     return {
       options: {
         chart: {
           id: 'vuechart-example',
-          type: 'pie'
+          type: 'pie',
         },
         labels: ['Team A', 'Team B', 'Team C'],
-            responsive: [{
-              breakpoint: 480,
-              options: {
-                chart: {
-                  width: 200
-                },
-                legend: {
-                  position: 'bottom'
-                }
-              }
-            }]
+        responsive: [
+          {
+            breakpoint: 480,
+            options: {
+              chart: {
+                width: 200,
+              },
+              legend: {
+                position: 'bottom',
+              },
+            },
+          },
+        ],
       },
-  series: [33, 33, 33],
+      series: [33, 33, 33],
     }
-  }
+  },
 }
 </script>
-<style scoped>
-
-
-</style>
+<style scoped></style>
