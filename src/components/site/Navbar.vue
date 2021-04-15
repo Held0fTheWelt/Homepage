@@ -16,7 +16,6 @@
       <v-btn text rounded to="/">Home</v-btn>
       <v-btn text rounded to="/portfolio">Portfolio</v-btn>
       <v-btn text rounded to="/contact">Contact</v-btn>
-      <v-btn text rounded to="/chart">Chart</v-btn>
       <v-btn text rounded to="/login">Login</v-btn>
     </v-app-bar>
   </div>

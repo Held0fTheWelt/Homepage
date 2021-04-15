@@ -17,6 +17,6 @@ new Vue({
 }).$mount('#app')
 
 Vue.use(Vue2TouchEvents)
-Vue.use(vueApexCharts)
 Vue.use(VueKonva)
+Vue.use(vueApexCharts)
 Vue.component('apexchart', vueApexCharts)
