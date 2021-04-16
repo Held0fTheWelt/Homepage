@@ -42,7 +42,7 @@
         <v-row>
           <v-col cols="7">
             <Gallery
-              :mp4="require(``+getVideoURL())"
+              :mp4="require(`@/assets/videos/projects/${this.id}/Trailer.mp4`)"
               :count="4"
               :videos="[4]"
               :url="[

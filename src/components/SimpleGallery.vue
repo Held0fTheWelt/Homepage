@@ -9,8 +9,8 @@
           rel="preload"
         />
         <div v-else>
-          <video v-if="mp4" autoplay controls preload ref="videoRef">
-            <source v-bind:src="mp4" type="video/mp4"/>
+          <video autoplay controls preload ref="videoRef">
+            <source v-if="mp4" :src="mp4"  type="video/mp4"/>
             <!-- <source src="../assets/Logo.ogg" type="video/ogg"> -->
             Ihr Browser kann dieses Video nicht wiedergeben.<br />
             Dieser Film zeigt einen Trailer zum Projekt.
