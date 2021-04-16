@@ -78,7 +78,7 @@ module.exports = {
         },
       },
       {
-        test: /\.json$/,
+        test: /\.(json|rar)$/,
         loader: 'json-loader',
       },
       {
