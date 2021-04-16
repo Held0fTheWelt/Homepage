@@ -10,7 +10,7 @@
         />
         <div v-else>
           <video autoplay controls preload ref="videoRef">
-            <source v-if="mp4" :src="mp4"  type="video/mp4"/>
+            <source v-if="mp4" :src="require('../assets/videos/projects/'+ '1'+'/Trailer.mp4') "  type="video/mp4"/>
             <!-- <source src="../assets/Logo.ogg" type="video/ogg"> -->
             Ihr Browser kann dieses Video nicht wiedergeben.<br />
             Dieser Film zeigt einen Trailer zum Projekt.
