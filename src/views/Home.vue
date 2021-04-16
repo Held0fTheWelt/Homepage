@@ -1,9 +1,9 @@
 <template>
-    <v-row class="home">
-      <v-col cols="12">
-        <LogoVideo />
-      </v-col>
-    </v-row>
+  <v-row class="home">
+    <v-col cols="12">
+      <LogoVideo />
+    </v-col>
+  </v-row>
 </template>
 
 <script>
@@ -20,11 +20,16 @@ export default {
 </script>
 
 <style scoped>
-
-.home, .container{width: 100%; height: 100%;}
-.row {margin: 0;}
-.home .col{
-padding:0;
+.home,
+.container {
+  width: 100%;
+  height: 100%;
+}
+.row {
+  margin: 0;
+}
+.home .col {
+  padding: 0;
 }
 
 h1 {

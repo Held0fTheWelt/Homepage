@@ -5,9 +5,9 @@
         <v-row>
           <v-col cols="12">
             <Gallery
-              :count="4"
-              :videos="[4]"
-              :url="[
+              v-bind:count="4"
+              v-bind:videos="[4]"
+              v-bind:url="[
                 getImageURL(1),
                 getImageURL(2),
                 getImageURL(3),
@@ -41,6 +41,7 @@
         <v-row>
           <v-col cols="7">
             <Gallery
+            :id="getVideoURL()"
               :count="4"
               :videos="[4]"
               :url="[
@@ -118,7 +119,7 @@ export default {
       return `${this.id}/screenshots/` + currentShot + '.jpg'
     },
     getVideoURL: function () {
-      return `${this.id}/Trailer.mp4`
+      return `${this.id}`
     },
   },
   data() {

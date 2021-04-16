@@ -1,10 +1,10 @@
 <template>
-        <video autoplay controls>
-          <source v-bind:src="video" type="video/mp4" />
-          <!-- <source src="../assets/Logo.ogg" type="video/ogg"> -->
-          Ihr Browser kann dieses Video nicht wiedergeben.<br />
-          Dieser Film zeigt einen Trailer zum Projekt.
-        </video>
+  <video autoplay controls>
+    <source v-bind:src="video" type="video/mp4" />
+    <!-- <source src="../assets/Logo.ogg" type="video/ogg"> -->
+    Ihr Browser kann dieses Video nicht wiedergeben.<br />
+    Dieser Film zeigt einen Trailer zum Projekt.
+  </video>
 </template>
 
 <script>
