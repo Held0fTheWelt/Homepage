@@ -78,13 +78,14 @@ export default {
       clickRight: require('@/assets/images/util/arrow_right.png'),
       selection: require('@/assets/images/util/dot.png'),
       selected: require('@/assets/images/util/dotselected.png'),
-      video: require('@/assets/videos/projects/' +
-        this.id +
-        '/Trailer.mp4'),
+      video: null
     }
   },
   created() {
     this.currentID = 1
+    this.video = require('@/assets/videos/projects/' +
+        this.id +
+        '/Trailer.mp4')
   },
 }
 //  @/assets/videos/projects in ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/SimpleGallery.vue?vue&type=script&lang=js&
