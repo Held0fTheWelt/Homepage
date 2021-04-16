@@ -1,19 +1,24 @@
 // webpack.config.js
 module.exports = {
   // ...
-  vue: {
-    html: {
-      // all loader queries can be specified here
-      // also, you can specify options for htmlMinifier here.
-      loader: 'vue-loader',
-      options: {
-        // webpack2 style
-        html: 'attrs=video:src img:src',
-      },
-      transformToRequire: {
-        video: 'src', img: 'src', image: 'xlink:href', // defaults
-        source: 'src',
-      }
-    },
-  },
+  vue:  {
+    test: /\.html$/,
+    exclude: /node_modules/,
+    use: [
+        {
+            loader: "html-loader",
+            options: {
+                attributes: {
+                    list: [
+                        {
+                            tag: "source",
+                            attribute: "src",
+                            type: "src"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
 }
