@@ -119,7 +119,7 @@ export default {
       return `${this.id}/screenshots/` + currentShot + '.jpg'
     },
     getVideoURL: function () {
-      return `${this.id}`
+       return `@/assets/videos/projects/${this.id}/Trailer.mp4`        
     },
   },
   data() {
