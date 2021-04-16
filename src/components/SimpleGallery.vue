@@ -9,8 +9,8 @@
           rel="preload"
         />
         <div v-else>
-          <video v-if="video" autoplay controls preload>
-            <source v-bind:src="video" type="video/mp4"/>
+          <video v-if="mp4" autoplay controls preload ref="videoRef">
+            <source v-bind:src="mp4" type="video/mp4"/>
             <!-- <source src="../assets/Logo.ogg" type="video/ogg"> -->
             Ihr Browser kann dieses Video nicht wiedergeben.<br />
             Dieser Film zeigt einen Trailer zum Projekt.
@@ -51,7 +51,7 @@ export default {
     },
   },
   props: {
-    id: {
+    mp4: {
       type: String,
       require: true,
     },
@@ -75,12 +75,10 @@ export default {
       clickRight: require('@/assets/images/util/arrow_right.png'),
       selection: require('@/assets/images/util/dot.png'),
       selected: require('@/assets/images/util/dotselected.png'),
-      video: require('@/assets/videos/Logo.mp4'),
     }
   },
   created() {
     this.currentID = 1
-    this.video = require('@/assets/videos/projects/1/Trailer.mp4')
   },
 }
 </script>
