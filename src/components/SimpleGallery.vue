@@ -80,7 +80,7 @@ export default {
   },
   created() {
     this.currentID = 1
-    this.video = require('@/assets/videos/projects/'+ '1'+'/Trailer.mp4') 
+    this.video = require(`@/assets/videos/projects/`+ `1`+`/Trailer.mp4`) 
   },
 }
 </script>
