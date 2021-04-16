@@ -10,6 +10,10 @@ module.exports = {
         // webpack2 style
         html: 'attrs=video:src img:src',
       },
+      transformToRequire: {
+        video: 'src', img: 'src', image: 'xlink:href', // defaults
+        source: 'src',
+      }
     },
   },
 }

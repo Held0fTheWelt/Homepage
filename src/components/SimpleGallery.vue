@@ -46,7 +46,7 @@ export default {
       // let string = this.url[this.currentID - 1]
       // string.replace("'","")
       // this.video =  require(string)
-      // this.video = require('@/assets/videos/projects/1/Trailer.mp4')
+      this.video = require('@/assets/videos/projects/1/Trailer.mp4')
       return true
     },
     isImage: function () {
