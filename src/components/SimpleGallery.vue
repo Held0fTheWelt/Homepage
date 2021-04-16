@@ -9,8 +9,8 @@
           rel="preload"
         />
         <div v-else>
-          <video v-if="getVideo()" autoplay controls preload>
-            <source :src="video" type="video/mp4" />
+          <video v-if="video" autoplay controls preload>
+            <source :src="video" type="video/mp4" @ended="onEnd" />
             <!-- <source src="../assets/Logo.ogg" type="video/ogg"> -->
             Ihr Browser kann dieses Video nicht wiedergeben.<br />
             Dieser Film zeigt einen Trailer zum Projekt.
@@ -39,16 +39,16 @@ export default {
     image() {
       return require('@/assets/images/projects/' + this.url[this.currentID - 1])
     },
-  },
-  methods: {
-    getVideo() {
-      console.log('/'+this.url[this.currentID - 1]+'/')
+    onEnd() {
+      // console.log('/'+this.url[this.currentID - 1]+'/')
       // let string = this.url[this.currentID - 1]
       // string.replace("'","")
       // this.video =  require(string)
-      this.video = require('@/assets/videos/projects/1/Trailer.mp4')
-      return true
+      // this.video = require('@/assets/videos/projects/1/Trailer.mp4')
+      return ''
     },
+  },
+  methods: {
     isImage: function () {
       for (let i = 0; i < this.videos.length; i++) {
         if (this.currentID == this.videos[i]) {
@@ -88,11 +88,8 @@ export default {
   },
   created() {
     this.currentID = 1
-    this.video = require(
-        this.id)
   },
 }
-//  @/assets/videos/projects in ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/SimpleGallery.vue?vue&type=script&lang=js&
 </script>
 
 <style scoped>
