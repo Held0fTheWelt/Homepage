@@ -1,47 +1,32 @@
 <template>
-  <v-container class="home">
-    <v-row>
-      <v-col>
-        <v-card
-          class="mx-auto {'.v-card-xs' : $vuetify.breakpoint.xs, '.v-card-big' : $vuetify.breakpoint.mdAndUp}"
-        >
-          <SiteDashboard />
-        </v-card>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col>
-        <v-card class="mx-auto">
-          <ProjectDashboard />
-        </v-card>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col>
+    <v-row class="home">
+      <v-col cols="12">
         <LogoVideo />
       </v-col>
     </v-row>
-  </v-container>
 </template>
 
 <script>
 // @ is an alias to /src
 import LogoVideo from '@/components/site/LogoVideo.vue'
-import SiteDashboard from '@/components/dashboard/SiteDashboard.vue'
-import ProjectDashboard from '@/components/dashboard/ProjectDashboard.vue'
 
 export default {
   name: 'Home',
 
   components: {
     LogoVideo,
-    SiteDashboard,
-    ProjectDashboard,
   },
 }
 </script>
 
 <style scoped>
+
+.home, .container{width: 100%; height: 100%;}
+.row {margin: 0;}
+.home .col{
+padding:0;
+}
+
 h1 {
   text-align: center;
   width: 100%;
