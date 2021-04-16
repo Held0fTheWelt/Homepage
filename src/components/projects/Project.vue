@@ -5,6 +5,7 @@
         <v-row>
           <v-col cols="12">
             <Gallery
+              v-bind:id="1"
               v-bind:count="4"
               v-bind:videos="[4]"
               v-bind:url="[

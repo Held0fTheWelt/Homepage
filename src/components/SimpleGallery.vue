@@ -10,7 +10,7 @@
         />
         <div v-else>
           <video v-if="video" autoplay controls preload>
-            <source :src="video" type="video/mp4" @ended="onEnd" />
+            <source v-bind:src="video" type="video/mp4" @ended="onEnd" />
             <!-- <source src="../assets/Logo.ogg" type="video/ogg"> -->
             Ihr Browser kann dieses Video nicht wiedergeben.<br />
             Dieser Film zeigt einen Trailer zum Projekt.
@@ -44,6 +44,7 @@ export default {
       // let string = this.url[this.currentID - 1]
       // string.replace("'","")
       // this.video =  require(string)
+      
       // this.video = require('@/assets/videos/projects/1/Trailer.mp4')
       return ''
     },
@@ -88,6 +89,7 @@ export default {
   },
   created() {
     this.currentID = 1
+    this.video = require('@/assets/videos/projects/1/Trailer.mp4')
   },
 }
 </script>
