@@ -42,7 +42,7 @@
         <v-row>
           <v-col cols="7">
             <Gallery
-              :mp4="require(`@/assets/videos/`+getVideoURL())"
+              :mp4="require(``+getVideoURL())"
               :count="4"
               :videos="[4]"
               :url="[
@@ -117,7 +117,7 @@ export default {
   },
   methods: {
     getVideoURL: function () {
-       return `projects/${this.id}/Trailer.mp4`
+       return `@/assets/videos/projects/${this.id}/Trailer.mp4`
     },
     getImageURL: function (currentShot) {
       return `${this.id}/screenshots/` + currentShot + '.jpg'
