@@ -1,17 +1,12 @@
 <template>
-  <video autoplay controls>
-    <source v-bind:src="video" type="video/mp4" />
-    <!-- <source src="../assets/Logo.ogg" type="video/ogg"> -->
-    Ihr Browser kann dieses Video nicht wiedergeben.<br />
-    Dieser Film zeigt einen Trailer zum Projekt.
-  </video>
+<iframe width="100%" height="100%" src="//www.youtube.com/embed/Y_kQ8DO3Wuw?autoplay=1&loop=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      video: require('@/assets/videos/Logo.mp4'),
+      
     }
   },
 }
